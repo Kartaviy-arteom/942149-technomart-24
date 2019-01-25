@@ -1,3 +1,32 @@
 body {
+	font-family: 'Cuprum', sans-serif;
 }
+.topmenu_line {
+	background-color: #293449;
+	height: 42px;
 }
+h1 {
+	font-style: italic;
+	color: #ee3643;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 23px; 
+}
+nav {
+
+}
+ul {
+	
+
+}
+li {
+	position: relative;
+	list-style:none;
+	display: inline-block;
+	padding: 32px;
+
+}
+
+
+
+
