@@ -14,12 +14,16 @@
       <a class="main-header-logo" href="index.html">
         <img src="img/logo.svg" width="110px" height="17px" alt="Логотип интернет-магазина «Техномарт»">
       </a>
-      <span class="header-search">Поиск:</span>
-      <!-- добавится форма поиска по сайту -->
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+          <label>
+          <span class="header-search">Поиск:</span>
+          <input type="text" name="search-form" value=" ">
+          </label>
+        </form>
+        <!-- добавилась форма поиска по сайту -->
       <span class="header-bookmarks"><a href="bookmarks.html">Закладки:</a></span>
       <span class="header-cart"><a href="cart.html">Корзина</a></span>
       <span class="header-order"><a href="order.html">Оформить заказ</a></span>
-
     </section>
     <section class="header-middle">
       <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
@@ -53,10 +57,55 @@
     </ul>
     <h2>Перфораторы</h2>
     <section class="filters">
-      <h3 class="visually-hidden">Фильтр товаров</h3>
-        <!-- Здесь будет форма -->
-    </section>
-      
+      <h3 class="visually-hidden">Фильтры товаров</h3>
+      <form class="filters" method="get">
+      <fieldset>
+        <legend>Производители</legend>
+        <ul>
+          <li class="filter-option">
+            <label>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Bosch" checked>Bosch
+            </label>
+          </li>
+          <li class="filter-option">
+            <label>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Интерскол">Интерскол
+            </label>
+          </li>
+          <li class="filter-option">
+            <label>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Makita" checked>Makita
+            </label>  
+          </li>
+          <li class="filter-option">
+            <label>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Dewalt">Dewalt
+            </label>
+          </li>
+          <li class="filter-option">
+            <label>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Hitachi">Hitachi
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Питание:</legend>
+        <ul>
+          <li class="filter-option">
+            <label>
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="accumulator" checked>Аккумуляторные
+            </label>  
+          </li>
+          <li class="filter-option">
+            <label>
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="electrical">Сетевые
+            </label>  
+          </li>
+        </ul>
+      </fieldset>
+      <button class="button button-submit-filters">Показать</button>
+    </section>  
     <section class="catalog">
       <h3 class="visually-hidden">Выбранный инструмент</h3>
       <ul class="catalog-list">
@@ -187,6 +236,12 @@
           </p>
         </li>
       </ul>
+    </section>
+    <section class="modal modal-incart"> <!-- Модальное окно товар добавлен в карзину-->
+      <p>Товар добавлен в корзину!
+        <a href="order.html" class="btn-order">Оформить заказ</a>
+        <button class="botton continue" type="button">Продолжить покупки</button>
+      </p>
     </section>
           
   </main>
