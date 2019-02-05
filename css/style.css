@@ -13,6 +13,13 @@ a {
 	text-decoration: none;
   
 }
+.header-top-menu {
+	font-size: 17px;
+	line-height: 17px;
+	color: #ffffff;
+	background-color: #293449;
+
+}
 .main-navigation {
 	font-size: 17px;
 	line-height: 17px;
@@ -23,6 +30,14 @@ a {
 .user-navigation {
 	list-style: none;
 }
-.site-navigation a {
+.site-navigation a, .header-top-menu a  {
 	color: #ffffff;
 }
+h1 {
+	font-size: 16px;
+	line-height: 23px;
+	font-style: italic;
+	color: #ee3643;
+	text-align: left;
+}
+  
