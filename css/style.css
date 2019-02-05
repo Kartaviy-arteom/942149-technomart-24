@@ -19,7 +19,10 @@ a {
 	color: #ffffff;
 	background-color: #31415b
 }	
-ul {
-	list-style:none;
+.site-navigation, 
+.user-navigation {
+	list-style: none;
 }
-
+.site-navigation a {
+	color: #ffffff;
+}
