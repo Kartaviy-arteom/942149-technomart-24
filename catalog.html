@@ -59,52 +59,46 @@
     <section class="filters">
       <h3 class="visually-hidden">Фильтры товаров</h3>
       <form class="filters" method="get">
-      <fieldset>
-        <legend>Производители</legend>
-        <ul>
-          <li class="filter-option">
-            <label>
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Bosch" checked>Bosch
-            </label>
-          </li>
-          <li class="filter-option">
-            <label>
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Интерскол">Интерскол
-            </label>
-          </li>
-          <li class="filter-option">
-            <label>
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Makita" checked>Makita
-            </label>  
-          </li>
-          <li class="filter-option">
-            <label>
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Dewalt">Dewalt
-            </label>
-          </li>
-          <li class="filter-option">
-            <label>
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Hitachi">Hitachi
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset>
-        <legend>Питание:</legend>
-        <ul>
-          <li class="filter-option">
-            <label>
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="accumulator" checked>Аккумуляторные
-            </label>  
-          </li>
-          <li class="filter-option">
-            <label>
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="electrical">Сетевые
-            </label>  
-          </li>
-        </ul>
-      </fieldset>
-      <button class="button button-submit-filters">Показать</button>
+        <fieldset>
+          <legend>Производители</legend>
+          <ul class="filters-list">
+            <li class="filter-option">
+              <label for="filter-bosh">Bosch</label>
+              <input class="visually-hidden filter-input" type="checkbox" name="Bosch" id="filter-bosh" checked>
+           </li>
+           <li class="filter-option">
+              <label for="filter-interscol">Интерскол</label>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Интерскол" id="filter-interscol">
+            </li>
+            <li class="filter-option">
+              <label for="filter-makita">Makita</label>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Makita" id="filter-makita" checked>
+            </li>
+            <li class="filter-option">
+              <label for="filter-Dewalt">Dewalt</label>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Dewalt" id="filter-Dewalt">
+            </li>
+            <li class="filter-option">
+              <label ="filter-Hitachi">Hitachi</label>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Hitachi" id="filter-Hitachi">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Питание:</legend>
+          <ul class="filters-list-power">
+            <li class="filter-option">
+              <label for="filter-accumulator">Аккумуляторные</label>
+              <input class="visually-hidden filter-input-radio" type="radio" name="product-group" value="accumulator" id="filter-accumulator" checked> 
+            </li>
+            <li class="filter-electrical">
+              <label for="filter-electrical">Сетевые </label>
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="electrical" id="filter-electrical">
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button button-submit-filters">Показать</button>
+      </form>
     </section>  
     <section class="catalog">
       <h3 class="visually-hidden">Выбранный инструмент</h3>
