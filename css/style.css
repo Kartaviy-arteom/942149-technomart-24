@@ -9,10 +9,15 @@ body {
 
 	background-color: #ffffff;
 }
+
 a {
 	text-decoration: none;
   
 }
+header {
+	background-color: #f4f7f9;
+}
+
 .header-top-menu {
 	font-size: 17px;
 	line-height: 17px;
@@ -20,19 +25,64 @@ a {
 	background-color: #293449;
 
 }
+
 .main-navigation {
 	font-size: 17px;
 	line-height: 17px;
 	color: #ffffff;
+
 	background-color: #31415b
 }	
+
 .site-navigation, 
 .user-navigation {
 	list-style: none;
 }
+
 .site-navigation a, .header-top-menu a  {
 	color: #ffffff;
 }
+
+.header-top-menu img {
+	background-color: #ed3543;
+	border-bottom: 5px solid #b42833;
+}
+
+.header-order {
+	background-color:#62a63d;
+}
+
+.header-contacts {
+    font-size: 14px;
+    line-height: 24px;
+    color: rgb(50,66,92);
+    text-align: center;
+}
+
+.header-contacts span {
+	font-size: 21px;
+    line-height: 21px;
+    color: rgb(238,54,67);
+
+    border: 3px solid #ffffff;
+
+
+}
+
+.user-navigation {
+	font-size: 21px;
+	line-height: 21px;
+	color: rgb(0,0,0);
+
+
+
+}
+
+.user-navigation li {
+    background: #ffffff;
+    text-decoration: none;
+}
+
 h1 {
 	font-size: 16px;
 	line-height: 23px;
