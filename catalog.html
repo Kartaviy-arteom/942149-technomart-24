@@ -57,8 +57,12 @@
     </ul>
     <h2>Перфораторы</h2>
     <section class="filters">
-      <h3 class="visually-hidden">Фильтры товаров</h3>
+      <h3 class="filters-title">Фильтр</h3>
       <form class="filters" method="get">
+        <fieldset>
+          <legend>Цена:</legend>
+          <!--Будет сортировка по цене-->
+        </fieldset>
         <fieldset>
           <legend>Производители</legend>
           <ul class="filters-list">
@@ -99,7 +103,12 @@
         </fieldset>
         <button class="button button-submit-filters">Показать</button>
       </form>
-    </section>  
+    </section> 
+    <section class="sort"> <!--Заготовка под сортировку-->
+      <h3>Сортировка:</h3>
+      <a class="sort-price" href="#">По цене</a>
+      
+    </section> 
     <section class="catalog">
       <h3 class="visually-hidden">Выбранный инструмент</h3>
       <ul class="catalog-list">
