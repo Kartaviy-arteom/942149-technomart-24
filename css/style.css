@@ -78,9 +78,10 @@ header {
 
 }
 
-.user-navigation li {
+.sing-in a, .registration a {
     background: #ffffff;
     text-decoration: none;
+    color: rgb(0,0,0);;
 }
 
 h1 {
