@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: "Cuprum", Arial, sans-serif;
-	font-size: 14px;
+	font-size: 13px;
 	line-height: 24px;
 	font-weight: 400;
 	color: rgb(0,0,0);
@@ -147,11 +147,13 @@ h1 {
 }
 
 .tehnomart-goods-group a {
-	font-size: 14px; /*?*/
+	font-size: 14px; 
     line-height: 18px;
 	color: #ffffff;
-	background-color: #e5e5e5;
-	text-align: center;
+	text-align: left;
+	text-transform: uppercase; 
+    background-color: #e5e5e5; /* Добавить прозрачность?*/
+
 } 
 
 .tehnomart-goods-group a:hover,
@@ -168,7 +170,7 @@ h1 {
     line-height: 30px;
     color: rgb(255,255,255);
     font-weight: bold;
-    text-align: center;
+    text-align: left;
 }
 
 .goods-group {
@@ -185,7 +187,6 @@ h1 {
 
 .drill-group {
 	background-color: #544238;
-	text-decoration: uppercase; /*не применяется свойство????*/
 } 
 
 .drill-group a {
@@ -215,3 +216,239 @@ h1 {
 .popular-product-title {
 	background: #f9f5f0;
 }
+
+.popular-product-title h2 {
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 30px;
+	text-align: left;
+	color: #32425c;
+}
+
+.all-popular-product {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: right;
+	color: #ffffff;
+	text-transform: uppercase;
+	background-color: #ee3643;
+}
+
+.catalog-list-popular {
+	font-family: "PT Sans", Arial, sans-serif;
+	list-style: none;
+	text-align: center;
+}
+
+.catalog-item-name {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 20px;
+	color: #000000;
+}
+
+.old-price {
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 18px;
+	color: #a9a9a9;
+	text-decoration: line-through;
+}
+
+.button-buy {
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 18px;
+	color: #ffffff;
+	background-color: #ee3643;
+	/* нужно ли добавлять background-color?*/
+}
+
+.buy-now {
+    font-weight: bold;
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
+	background-color: #63a63e;
+}
+
+.bookmark {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 18px;
+	color: #32425c;
+	border: 3px solid #63a63e;
+}
+
+.popular-maker-tittle {
+	background: #f9f5f0;
+}
+
+.popular-maker-tittle h2 {
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 30px;
+	text-align: left;
+	color: #32425c;
+}
+
+.all-popular-maker {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: right;
+	color: #ffffff;
+	text-transform: uppercase;
+	background-color: #ee3643;
+}
+
+.popular-maker-list {
+	list-style: none;
+}
+
+.service {
+	font-family: "PT Sans", Arial, sans-serif;
+	text-align: left;
+
+}
+
+.service h2 {
+	font-family: "Cuprum", Arial, sans-serif;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 30px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.service p {
+	font-weight: 400;
+	color: #000000;
+}
+
+.service-list {
+	list-style: none;
+}
+
+.service-list-button {
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 30px;
+	color: #ffffff;
+	background: #32425c;
+	border: none;
+}
+
+.service-list-button:active {
+	color: #32425c;
+	background: #ffffff;
+}
+
+.service-list-button:hover,
+.service-list-button:focus {
+	color: #ffffff;
+	background: #293449;
+}
+
+.service-delivery h3 {
+	font-family: "Cuprum", Arial, sans-serif;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 36px;
+	color: #32425c;
+	text-transform: uppercase;
+}
+
+.dilivery-contacts {
+	text-align: left;
+}
+
+.dilivery-contacts h2,
+.dilivery-contacts h3 {
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.transport-list {
+    font-weight: 400;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+.botton {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
+	text-transform: uppercase;
+	background: #ee3643
+}
+
+.botton:hover,
+.botton:focus {
+	background: #ca2c37;
+}
+
+.botton:active {
+	background: #ba2732;
+}
+
+.modal {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 18px;
+	border-top: 7px solid #ff5257;
+}
+
+.modal input {
+	font-size: 13px;
+	color: #999999;
+	border: 2px solid #999999;
+}
+
+.modal input:hover {
+	border: 2px solid #b5b5b5;
+}
+
+.modal input:focus {
+	border: 2px solid #ee3643;
+}
+
+.footer-menu img {
+	background: #ee3643;
+	border-bottom: 5px solid #b52933;
+}
+
+.footer-menu {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: #ffffff;
+	background: #32425c;
+}
+
+.footer-top-nav,
+.footer-secondary-nav {
+	list-style: none;
+}
+
+.footer-top-nav a {
+	color: #ffffff;
+}
+
+.footer-secondary-nav a {
+	color: #ffd180;
+}
+
+.footer-top-nav:focus,
+.footer-secondary-nav:focus,
+.footer-top-nav:hover,
+.footer-secondary-nav:hover {
+	text-decoration: underline;
+}
+
+
+
