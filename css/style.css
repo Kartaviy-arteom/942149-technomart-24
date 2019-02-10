@@ -48,7 +48,7 @@ header {
 
 .main-navigation li:active {
 	background: #1d2639;
-	color: #508534; /*Проверить цвет*/
+	color: rgba(255, 255, 255, 0.6);
 }
 
 .site-navigation, 
@@ -98,9 +98,7 @@ header {
 	font-size: 21px;
     line-height: 21px;
     color: rgb(238,54,67);
-
     border: 3px solid #ffffff;
-
 
 }
 
@@ -108,9 +106,6 @@ header {
 	font-size: 21px;
 	line-height: 21px;
 	color: rgb(0,0,0);
-
-
-
 }
 
 
@@ -140,6 +135,7 @@ h1 {
 	font-style: italic;
 	color: #ee3643;
 	text-align: left;
+	font-weight: 400;
 }
 
 .tehnomart-goods-group li {
@@ -422,12 +418,15 @@ h1 {
 	border-bottom: 5px solid #b52933;
 }
 
+.main-footer {
+	background: #32425c;
+}
+
 .footer-menu {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 24px;
 	color: #ffffff;
-	background: #32425c;
 }
 
 .footer-top-nav,
@@ -443,12 +442,119 @@ h1 {
 	color: #ffd180;
 }
 
-.footer-top-nav:focus,
-.footer-secondary-nav:focus,
-.footer-top-nav:hover,
-.footer-secondary-nav:hover {
+.footer-top-nav a:focus,
+.footer-secondary-nav a:focus,
+.footer-top-nav a:hover,
+.footer-secondary-nav a:hover {
 	text-decoration: underline;
 }
 
+.footer-top-nav a:active {
+	color: rgba(241, 245, 247, 0.5);
+	
+}
 
+.footer-secondary-nav a:active {
+    color: rgba(255, 209, 128, 0.5);
+}
+
+.rights-social-copyright {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #ffffff;
+	background: #293449;
+}
+
+.social {
+	list-style: none;
+}
+
+.social li {
+	background: #212a3a;
+}
+
+.social li:hover,
+.social li:focus,
+.social li:active {
+	background-color: #ee3643
+}
+
+.footer-feedback a,
+.footer-copyright a {
+	color: #ffd180;
+}
+
+.footer-feedback a:hover,
+.footer-copyright a:hover,
+.footer-feedback a:focus,
+.footer-copyright a:focus {
+	text-decoration: underline;
+}
+
+.footer-feedback a:active,
+.footer-copyright a:active {
+	color: #ee3643;
+	text-decoration: none;
+}
+
+.breadcrumbs {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 400;
+	list-style: none;
+	text-transform: uppercase;
+}
+
+.breadcrumbs a {
+	color: #000000;
+}
+
+h2 {
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	color: #32425c;
+	text-transform: uppercase;
+	background: #f2f6f8;
+}
+
+.filters {
+	font-family: "PT Sans", Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.filters h3 {
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 400;
+	background: #f7f3ec;
+}
+
+.filters legend {
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+.filters ul {
+	font-size: 15px;
+	line-height: 20px;
+	list-style: none;
+}
+
+.button-submit-filters {
+	font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    text-transform: uppercase;
+    border: 1px solid #e5e5e5;
+    background: #ffffff;
+}
+
+.catalog ul {
+	list-style: none;
+}
 
