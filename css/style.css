@@ -83,6 +83,16 @@ header {
 	margin-bottom: 120px;
 }	
 
+.inner-navigation {
+	font-size: 17px;
+	line-height: 17px;
+	color: #ffffff;
+
+	background-color: #31415b;
+	border-bottom: 5px solid #293349;
+	margin-bottom: 60px;
+}
+
 .main-navigation li:hover,
 .main-navigation li:focus {
 	background: #293449;
@@ -90,6 +100,17 @@ header {
 }
 
 .main-navigation li:active {
+	background: #1d2639;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.inner-navigation li:hover,
+.inner-navigation li:focus {
+	background: #293449;
+
+}
+
+.inner-navigation li:active {
 	background: #1d2639;
 	color: rgba(255, 255, 255, 0.6);
 }
@@ -742,5 +763,30 @@ h2 {
 
 .catalog ul {
 	list-style: none;
+}
+
+.breadcrumbs {   
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px; 
+}
+
+.breadcrumbs li {
+	padding-right: 10px; /* предварительное значение*/
+}
+
+.breadcrumbs li:last-child {
+	margin-right: auto;
+}
+
+.catalog-main-title {
+	margin: 0;
+	padding-left: 30px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	background: #f1f5f7;
 }
 
