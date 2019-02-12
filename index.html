@@ -11,21 +11,23 @@
   <body>
     <header class="main-header">
       <section class="header-top-menu">
-        <a class="main-header-logo">
-        <img src="img/logo.svg" width="110px" height="17px" alt="Логотип интернет-магазина «Техномарт»">
-        </a>
-        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-          <label>
-          <span class="header-search">Поиск:</span>
-          <input type="text" name="search-form" value=" ">
-          </label>
-        </form>
-        <!-- добавилась форма поиска по сайту -->
-        <span class="header-bookmarks"><a href="bookmarks.html">Закладки:</a></span>
-        <span class="header-cart"><a href="cart.html">Корзина</a></span>
-        <span class="header-order"><a href="order.html">Оформить заказ</a></span>
+        <div class="header-top-content container">
+          <a class="main-header-logo">
+          <img src="img/logo.svg" width="110px" height="17px" alt="Логотип интернет-магазина «Техномарт»">
+          </a>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+            <label>
+            <span class="header-search">Поиск:</span>
+            <input type="text" name="search-form" value=" ">
+            </label>
+          </form>
+          <!-- добавилась форма поиска по сайту -->
+          <span class="header-bookmarks"><a href="bookmarks.html">Закладки:</a></span>
+          <span class="header-cart"><a href="cart.html">Корзина</a></span>
+          <span class="header-order"><a href="order.html">Оформить заказ</a></span>
+        </div>
       </section>
-      <section class="header-middle">
+      <section class="header-middle container">
         <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
         <p class="header-contacts">
           <span>+7(812)555-05-55</span><br>г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8
@@ -35,7 +37,7 @@
           <li class="registration"><a href="#">Регистрация</a></li>
         </ul>
       </section>
-      <nav class="main-navigation">
+      <nav class="main-navigation container">
         <ul class="site-navigation">
           <li class="site-navigation-current">Главная</li>
           <li><a href="About.html">Компания</a></li>
@@ -237,7 +239,7 @@
       </section>
     </main> 
     <footer  class="main-footer">
-      <section class="footer-menu">
+      <section class="footer-menu container">
         <a class="footer-logo">
           <img src="img/logo.svg" width="136px" height="22px" alt="Логотип интернет-магазина «Техномарт»">
         </a>
@@ -258,25 +260,27 @@
           <li><a href="Special.html">Спецпредложения</a></li>
         </ul>
       </section>
-      <section class="rights-social-copyright">
-        <p class="footer-rights">
-        2010-2019 Компания «Техномарт»<br>
-        Все права защищены
-        </p>
-        <ul class="social">
-          <li><a class="social" href="#"><img src="img/vk-icon.svg" width="26px" height="15px" alt="Вконтакте"></a></li>
-          <li><a class="social" href="#"><img src="img/facebook-icon.svg" width="12px" height="22px" alt="Фэйсбук"></a></li>
-          <li><a class="social" href="#"><img src="img/instagram-icon.svg" width="21px" height="21px" alt="Инстаграм"></a></li>
-        </ul>
-        <p class="footer-feedback">
-        Обратная связь:<br> 
-          <a  href="#">mail@htmlecademy.ru</a>
-        </p>
-        <p class="footer-copyright">
-        Разработано - <br> 
-          <a  href="https://htmlacademy.ru/">htmlacademy.ru</a>
-        </p>
-      </section>  
+      <div class="footer-wrapper">
+        <section class="rights-social-copyright container">
+          <p class="footer-rights">
+          2010-2019 Компания «Техномарт»<br>
+          Все права защищены
+          </p>
+          <ul class="social">
+            <li><a class="social" href="#"><img src="img/vk-icon.svg" width="26px" height="15px" alt="Вконтакте"></a></li>
+            <li><a class="social" href="#"><img src="img/facebook-icon.svg" width="12px" height="22px" alt="Фэйсбук"></a></li>
+            <li><a class="social" href="#"><img src="img/instagram-icon.svg" width="21px" height="21px" alt="Инстаграм"></a></li>
+          </ul>
+          <p class="footer-feedback">
+          Обратная связь:<br> 
+            <a  href="#">mail@htmlecademy.ru</a>
+          </p>
+          <p class="footer-copyright">
+          Разработано - <br> 
+            <a  href="https://htmlacademy.ru/">htmlacademy.ru</a>
+          </p>
+        </section> 
+      </div> 
     </footer> 
   </body>
 </html>
