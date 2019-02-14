@@ -32,6 +32,11 @@ header {
   padding: 0 10px;
 }
 
+.main-header {
+	margin-bottom: 20px;
+	padding-bottom: 60px;
+}
+
 .header-top-menu {
 	font-size: 17px;
 	line-height: 17px;
@@ -77,20 +82,16 @@ header {
 	font-size: 17px;
 	line-height: 17px;
 	color: #ffffff;
-
 	background-color: #31415b;
 	border-bottom: 5px solid #293349;
-	margin-bottom: 120px;
 }	
 
 .inner-navigation {
 	font-size: 17px;
 	line-height: 17px;
 	color: #ffffff;
-
 	background-color: #31415b;
 	border-bottom: 5px solid #293349;
-	margin-bottom: 60px;
 }
 
 .main-navigation li:hover,
@@ -133,12 +134,13 @@ header {
 }
 
 .header-top-menu img {
-	background-color: #ed3543;
-	border-bottom: 5px solid #b42833;
+    display: block;
 	padding-top: 13px;
 	padding-bottom: 13px;
 	padding-left: 55px;
 	padding-right: 55px;
+	background-color: #ed3543;
+	box-shadow: 0 5px 0 0 #b42833;
 }
 
 .header-top-menu img:hover, 
@@ -441,9 +443,19 @@ ul .drill-group {
 }
 
 .popular-maker-list li {
-	width: 218px;
 	border: 1px solid #ebebeb;
 	margin-bottom: 20px;
+}
+
+.popular-maker-list a {
+	display: block;
+	width: 218px;
+	height: 100%;
+}
+
+.popular-maker-item img{
+	display: block;
+	margin: auto;
 }
 
 .service {
