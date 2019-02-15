@@ -5,8 +5,8 @@
     <title>Каталог интернет-магазина «Техномарт»</title>
     <link rel="stylesheet"  href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <header class="main-header">
@@ -21,8 +21,8 @@
              <input type="text" name="search-form" value=" ">
            </label>
           </form>
-          <span class="header-bookmarks"><a href="bookmarks.html">Закладки:</a></span>
-          <span class="header-cart"><a href="cart.html">Корзина</a></span>
+          <span class="header-bookmarks"><a href="bookmarks.html">Закладки: 0</a></span>
+          <span class="header-cart"><a href="cart.html">Корзина: 10</a></span>
           <span class="header-order"><a href="order.html">Оформить заказ</a></span>
         </div>
       </section>
@@ -33,8 +33,14 @@
           г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8
         </p>
         <ul class="user-navigation">
-          <li class="sing-in"><a href="#">Войти</a></li>
-          <li class="registration"><a href="#">Регистрация</a></li>
+          <li class="user-name"><a href="#">Равшан Джамшудович</a></li>  <!--Идея в ссылке на профиль пользователя-->
+          <li class="sing-out">
+            <a href="#" aria-label="Выйти">
+              <img src="img/icon-logout.svg" width="20px" height="17px" alt="">
+            </a>
+          </li>
+          <li class="my-order"><a href="#">Мои заказы</a></li>
+          <li class="personal-account"><a href="#">Личный кабинет</a></li>
         </ul>
       </section>
       <div class="container">

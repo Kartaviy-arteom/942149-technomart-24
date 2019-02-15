@@ -584,7 +584,11 @@ ul .drill-group {
 
 .footer-menu img {
 	background: #ee3643;
-	border-bottom: 5px solid #b52933;
+	box-shadow: 0 5px 0 0 #b42833;
+	padding-left: 42px;
+	padding-right: 42px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .main-footer {
@@ -859,6 +863,10 @@ h2 {
 	margin-right: 20px;
 }
 
+.catalog-item:nth-child(4) {
+	margin-right: 0px;
+}
+
 .catalog-list li:nth-child(3n) {
 	margin-right: 0;
 }
@@ -881,4 +889,15 @@ h2 {
 	font-weight: 400;
 	text-align: center;
 	color: rgb(0,0,0);
+}
+
+.user-name a {
+	color: rgb(0,0,0);
+}
+
+.my-order a, .personal-account a {
+	font-size: 16px;
+    line-height: 18px;
+    color: rgb(50,66,92);
+    text-decoration: underline;
 }
