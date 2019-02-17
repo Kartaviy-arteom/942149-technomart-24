@@ -39,7 +39,7 @@ header {
 
 .header-top-menu {
 	font-size: 17px;
-	line-height: 17px;
+	line-height: 18px;
 	color: #ffffff;
 	background-color: #293449;
 
@@ -51,7 +51,7 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
+	flex-wrap: wrap;
 }
 
 }
@@ -61,26 +61,45 @@ header {
 }
 
 .search-form {
-	width: 250px;
+	box-sizing: border-box;
+	width: 270px;
+	padding-left: 49px;
+	position: relative;
+	padding-top: 9px;
+}
+
+.search-form::before {
+	content: "";
+	position: absolute;
+	left: 16px;
+	top: 12px;
+    width: 20px;
+    height: 20px;
+  
+    background-image: url("../img/icon-search.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.3;  
+}
+
+.header-top-menu input {
+	background: #293449;
+	border: none;
 }
 
 .header-bookmarks {
     width: 140px;
     margin-left: auto;
+
 }
 
 .header-cart {
-	width: 140px;
+	width: 160px;
 }
-
-.header-top-menu:hover {
-	background-color: #212939;
-}
-
 
 .main-navigation {
 	font-size: 17px;
-	line-height: 17px;
+	line-height: 18px;
 	color: #ffffff;
 	background-color: #31415b;
 	border-bottom: 5px solid #293349;
@@ -174,6 +193,7 @@ header {
 }
 
 .header-contacts {
+	margin: 0;
 	width: 300px;
     font-size: 14px;
     line-height: 24px;
@@ -182,26 +202,72 @@ header {
 }
 
 .header-contacts span {
+	display: inline-block;
+	position: relative;
 	font-size: 21px;
     line-height: 21px;
     color: rgb(238,54,67);
     border: 3px solid #ffffff;
-    padding: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 42px;
+    padding-left: 71px;
+    margin-bottom: 4px;
 
 }
 
+.header-contacts span::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 14px;
+	top: 10px;
+	background-image: url("../img/icon-phone.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
 .user-navigation {
-	width: 300px; /*new*/
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: 300px; 
+	margin: 0;
 	font-size: 21px;
 	line-height: 21px;
 	color: rgb(0,0,0);
+	align-self: flex-start;
 }
 
 
 .sing-in a, .registration a {
+	display: block;
+	padding-top: 11px;
+	padding-bottom: 13px;
     background: #ffffff;
     text-decoration: none;
-    color: rgb(0,0,0);;
+    color: rgb(0,0,0);
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.sing-in a {
+	position: relative;
+	margin-right: 10px;
+	padding-left: 50px;
+}
+
+.sing-in a::before {
+	content: "";
+	position: absolute;
+	top: 12px;
+	left: 15px;
+	width: 20px;
+	height: 20px;
+	background-image: url("../img/icon-login.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 
@@ -210,7 +276,13 @@ header {
 .registration a:focus,
 .registration a:hover
  {
-	color: #ee3643; /*Проверить цвет*/
+	color: #ee3643;
+}
+
+.sing-in a:focus::before,
+.sing-in a:hover::before {
+
+	background-image: url("../img/icon-login-focus.svg");
 }
 
 .sing-in a:active,
@@ -218,14 +290,18 @@ header {
 	color: c5c5c5;
 }
 
-h1 {
-	width: 200px;  /*new*/
+.header-middle h1 {
+	margin: 0;
+	box-sizing: border-box;
+	width: 300px;  /*new*/
 	font-size: 16px;
 	line-height: 23px;
 	font-style: italic;
 	color: #ee3643;
 	text-align: left;
 	font-weight: 400;
+	padding-left: 52px;
+	padding-right: 52px;
 }
 
 .tehnomart-goods-group {
@@ -901,3 +977,62 @@ h2 {
     color: rgb(50,66,92);
     text-decoration: underline;
 }
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.header-top-content a {
+	display: block;
+}
+
+.header-bookmarks a {
+	position: relative;
+	padding-top: 11px;
+	padding-left: 45px;
+
+}
+
+.header-bookmarks a::before {
+	content: "";
+	position: absolute;
+	width: 15px;
+	height: 17px;
+	left: 18px;
+	top: 12px;
+    background-image: url("../img/icon-bookmark.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.3;
+
+}
+
+.header-cart a {
+	position: relative;
+	padding-top: 11px;
+	padding-left: 45px;
+
+}
+
+.header-cart a::before {
+	content: "";
+	position: absolute;
+	width: 17px;
+	height: 16px;
+	left: 18px;
+	top: 12px;
+    background-image: url("../img/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.3;
+
+}
+
+.header-order {
+	padding-top: 11px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
