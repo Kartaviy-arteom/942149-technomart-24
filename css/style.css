@@ -113,8 +113,8 @@ header {
 	border-bottom: 5px solid #293349;
 }
 
-.main-navigation li:hover,
-.main-navigation li:focus {
+.main-navigation a:hover,
+.main-navigation a:focus {
 	background: #293449;
 
 }
@@ -137,10 +137,12 @@ header {
 
 .site-navigation {
 	margin: 0;
+	padding: 0;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	align-items: flex-end;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
 }
 
 .site-navigation, 
@@ -1035,4 +1037,41 @@ img {
 	padding-right: 20px;
 }
 
+.site-navigation a {
+	display: block;
+	vertical-align: middle;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px; 
+}
 
+.site-navigation li:first-child {
+	padding-left: 22px;
+}
+
+.site-navigation li:last-child {
+	padding-right: 22px;
+}
+
+.goods-group strong {
+	display: inline-block;
+	padding-top: 22px;
+	padding-bottom: 11px;
+}
+
+.goods-group a {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 24px;
+	padding-right: 24px;
+	margin-bottom: 22px;
+	margin-left: 25px;
+}
+
+.goods-group {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
