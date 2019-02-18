@@ -317,6 +317,7 @@ header {
 }
 
 .tehnomart-goods-group li {
+	position: relative;
 	list-style: none;
 	width: 300px;
     margin-bottom: 20px;
@@ -328,17 +329,17 @@ header {
 	color: #ffffff;
 	text-align: left;
 	text-transform: uppercase; 
-    background-color: #dd9f28;
+    background-color: rgba(229,229,229,0.`);
     border-radius: 3px;
 } 
 
 .tehnomart-goods-group a:hover,
 .tehnomart-goods-group a:focus {
-	background-color: #cccccc;
+	background-color: rgba(204,204,204,0.2);
 }
 
 .tehnomart-goods-group a:active {
-    background-color: #b2b2b2;
+    background-color: rgba(178,178,178,0.3);
 }
 
 .tehnomart-goods-group strong {
@@ -398,6 +399,7 @@ ul .drill-group {
 	padding-right: 30px;
 	background: #f9f5f0;
 	margin-bottom: 20px;
+	align-items: center;
 }
 
 .popular-product-title h2 {
@@ -412,6 +414,11 @@ ul .drill-group {
 }
 
 .all-popular-product {
+	padding-right: 55px;
+	padding-left: 55px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 3px;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
@@ -488,6 +495,7 @@ ul .drill-group {
 	background: #f9f5f0;
 	margin-bottom: 20px;
 	background: #f9f5f0;
+	align-items: center;
 }
 
 .popular-maker-tittle h2 {
@@ -499,6 +507,11 @@ ul .drill-group {
 }
 
 .all-popular-maker {
+	padding-right: 55px;
+	padding-left: 55px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 3px;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
@@ -533,6 +546,12 @@ ul .drill-group {
 .popular-maker-item img{
 	display: block;
 	margin: auto;
+}
+
+.popular-maker-item a {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 .service {
@@ -754,16 +773,26 @@ ul .drill-group {
 }
 
 .social {
+	margin: 0;
+	padding: 0;
 	width: 150px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	list-style: none;
+	align-items: center;
+
 }
 
 .social li {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	width: 42px;
+	height: 42px;
 	background: #212a3a;
+	border-radius: 20px;
 }
 
 .social li:hover,
@@ -1053,14 +1082,14 @@ img {
 	padding-right: 52px;
 }
 
-.goods-group strong {
+.tehnomart-goods-group strong {
 	display: inline-block;
 	padding-top: 22px;
 	padding-bottom: 11px;
 	padding-left: 23px;
 }
 
-.goods-group a {
+.tehnomart-goods-group a {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 24px;
@@ -1069,9 +1098,99 @@ img {
 	margin-left: 25px;
 }
 
-.goods-group {
+.tehnomart-goods-group li {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-start;
+}
+
+.goods-group {
+	position: relative;
+	background-image: url("../img/icon-1.svg");
+	background-repeat: no-repeat;
+	background-position: 213px 50%;
+
+}
+
+.tehnomart-goods-group .flag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+  width: 60px;
+  height: 60px;
+  
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.tehnomart-goods-group .flag-new {
+  background-image: url("../img/new-flag.png");
+  background-repeat: no-repeat;
+}
+
+
+.tools-group {
+	background-image: url("../img/icon-2.svg");
+	background-repeat: no-repeat;
+	background-position: 197px 50%;
+}
+
+.technic-group {
+	background-image: url("../img/icon-3.svg");
+	background-repeat: no-repeat;
+	background-position: 190px 50%;
+}
+
+.discount-group {
+	background-image: url("../img/icon-4.svg");
+	background-repeat: no-repeat;
+	background-position: 196px 50%;
+}
+ 
+.free-dilivery-group {
+	background-image: url("../img/icon-5.svg");
+	background-repeat: no-repeat;
+	background-position: 191px 50%;
+} 
+
+.special-offer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.special-offer div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 300px;
+}
+
+.discount-group {
+	margin-bottom: 20px;
+}
+
+.drill-group {
+	justify-content: flex-start;
+	background-image: url("../img/drill-group.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.drill-group span {
+	font-size: 18px;
+	line-height: 24px;
+	padding-left: 25px;
+
+}
+
+.drill-group strong {
+	padding-bottom: 0;
+}
+
+.drill-tools {
+	margin-top: auto;
 }
