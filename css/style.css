@@ -233,7 +233,8 @@ header {
 .user-navigation {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-end;
+	justify-content: space-between;
+	flex-wrap: wrap; 
 	width: 300px; 
 	margin: 0;
 	font-size: 21px;
@@ -555,10 +556,14 @@ ul .drill-group {
 }
 
 .service {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	font-family: "PT Sans", Arial, sans-serif;
 	text-align: left;
 	background: #f4f8fa;
 	margin-bottom: 80px;
+	padding-bottom: 100px;
 
 }
 
@@ -578,15 +583,25 @@ ul .drill-group {
 
 .service-list {
 	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 240px;
 }
 
 .service-list-button {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 23px;
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 30px;
 	color: #ffffff;
 	background: #32425c;
 	border: none;
+	width: 100%;
+	text-align: left;
+	border-top: 1px solid #3f4f69;
+	border-bottom: 1px solid #293349;
 }
 
 .service-list-button:active {
@@ -600,13 +615,32 @@ ul .drill-group {
 	background: #293449;
 }
 
+.service-delivery {
+	width: 620px;
+	background-image: url("../img/track.png");
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+}
+
 .service-delivery h3 {
+	margin: 0;
+	padding: 0;
 	font-family: "Cuprum", Arial, sans-serif;
 	font-weight: 400;
 	font-size: 36px;
 	line-height: 36px;
 	color: #32425c;
 	text-transform: uppercase;
+	margin-bottom: 23px;
+}
+
+.service-delivery p {
+	width: 300px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-align: left;
+	padding-right: 10px;
 }
 
 .dilivery-contacts {
@@ -614,6 +648,7 @@ ul .drill-group {
 	flex-direction: row;
 	justify-content: space-between;
 	text-align: left;
+	margin-bottom: 85px;
 }
 
 .features {
@@ -634,18 +669,56 @@ ul .drill-group {
 }
 
 .transport-list {
+	margin: 0;
+	padding: 0;
     font-weight: 400;
 	font-size: 18px;
 	line-height: 20px;
+	list-style: none;
+}
+
+.transport-list li {
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 20px;
+}
+
+.transport-list li:last-child {
+	margin-bottom: 35px;
+}
+
+.transport-list li::before {
+	content: "";
+	width: 25px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	background: #ff5357;
+}
+
+.location-map {
+	display: block;
+	margin-bottom: 40px;
+}
+
+.transport-list-wrapper {
+	max-width: 220px;
 }
 
 .botton {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 3px;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
 	color: #ffffff;
 	text-transform: uppercase;
-	background: #ee3643
+	background: #ee3643;
+	text-align: center;
+
 }
 
 .botton:hover,
@@ -696,7 +769,8 @@ ul .drill-group {
 	flex-direction: row;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	align-items: center
+	align-items: center;
+	margin-bottom: 50px;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 24px;
@@ -705,6 +779,7 @@ ul .drill-group {
 
 .footer-logo {
 	width: 220px;
+	margin-bottom: 29px;
 }
 
 .footer-top-nav {
@@ -716,6 +791,7 @@ ul .drill-group {
 
 .footer-contacts {
 	width: 380px;
+	margin: 0;
 }
 
 .footer-secondary-nav {
@@ -756,12 +832,19 @@ ul .drill-group {
 
 .rights-social-copyright {
 	display: flex;
-	flex-wrap: row;
+	flex-direction: row;
 	justify-content: space-between;
+	padding-top: 40px;
+	padding-bottom: 35px;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 400;
 	color: #ffffff;	
+}
+
+.rights-social-copyright p {
+	margin: 0;
+	padding: 0;
 }
 
 .footer-wrapper {
@@ -898,7 +981,7 @@ h2 {
 }
 
 .breadcrumbs li {
-	padding-right: 10px; /* предварительное значение*/
+	padding-right: 40px;
 }
 
 .breadcrumbs li:last-child {
@@ -995,6 +1078,31 @@ h2 {
 	font-weight: 400;
 	text-align: center;
 	color: rgb(0,0,0);
+}
+
+.user-name {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+	width: 300px;
+	padding-left: 47px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	background: #ffffff;
+}
+
+.user-name::before {
+	position: absolute;
+	content: "";
+	width: 20px;
+	height: 20px;
+	top: 50%;
+	margin-top: -10px;
+	left: 12px;
+	background-image: url("../img/icon-user.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .user-name a {
@@ -1193,4 +1301,98 @@ img {
 
 .drill-tools {
 	margin-top: auto;
+}
+
+.gallery-button-back {
+	position: absolute;
+	top: 50%;
+	left: 24px;
+	margin-top: -20px;
+
+}
+
+.gallery-button-next {
+	position: absolute;
+	top: 50%;
+	right: 24px;
+	margin-top: -20px;
+}
+
+.gallery-button {
+	background: transparent;
+	border: none;
+	padding: 0;
+}
+
+.service-wrapper {
+	background: #f4f8f9;
+}
+
+.service-tittle {
+	width: 400px;
+	margin-top: 68px;
+	margin-bottom: 70px; 
+}
+
+.service-tittle h2 {
+	margin: 0;
+}
+
+.service-tittle p {
+	padding-top: 40px;
+	margin: 0;
+}
+
+.service-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.goods-in-cart {
+	background: #ed3543;
+}
+
+.sing-out {
+	padding-right: 10px;
+}
+
+.personal-account {
+	position: relative;
+	margin-right: auto;
+	padding-left: 32px;
+}
+
+.my-order {
+	padding-left: 18px;
+}
+
+.personal-account::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	margin-top: -2px;
+	left: 16px;
+	width: 4px;
+	height: 4px;
+	background: #31415b;
+	border-radius: 50%;
+
+}
+
+.breadcrumbs li:not(:first-child) {
+	position: relative;
+}
+
+.breadcrumbs li:not(:first-child)::before {
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 12px;
+	margin-top: -6px;
+	top: 50%;
+	left: -19px;
+	background-image: url("../img/icon-right-small.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }

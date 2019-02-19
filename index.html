@@ -51,8 +51,8 @@
         </nav>
       </div> 
     </header>
-    <main class="container">
-      <section class="tehnomart-goods">
+    <main>
+      <section class="tehnomart-goods container">
         <h2 class="visually-hidden">Товары компании Техномарт</h2>
         <ul class="tehnomart-goods-group">
           <li class="goods-group">
@@ -72,8 +72,8 @@
             <strong>Дрели</strong>
             <span>Соседям на радость</span>
             <a href="#" class="drill-tools">Открыть каталог</a>
-            <button "class="button gallery-button gallery-button-back"  type="button"">Назад</button>
-            <button "class="button gallery-button gallery-button-next"  type="button"">Вперед</button>
+            <button class="button gallery-button gallery-button-back" type="button"><img src="img/icon-left.svg" width="22" height="40"></button>
+            <button class="button gallery-button gallery-button-next" type="button"><img src="img/icon-right.svg" width="22" height="40"></button>
           </li>
           <li class="special-offer">
             <div class="discount-group">
@@ -87,7 +87,7 @@
           </li>
         </ul>
       </section>
-      <section class="popular-product"> <!-- Секция к бонусному заданию "популярные товары"-->
+      <section class="popular-product container"> <!-- Секция к бонусному заданию "популярные товары"-->
         <div class="popular-product-title">
           <h2>Популярные товары:</h2>
           <a href="#" class="all-popular-product">Все популярные товары</a>
@@ -153,7 +153,7 @@
       </section>
       <!-- Окончание секции к бонусному заданию "популярные товары"-->
       <!-- Популярные производители инструмента -->
-      <section class="popular-maker">
+      <section class="popular-maker container">
         <div class="popular-maker-tittle">
           <h2>Популярные производители:</h2>
           <a href="#" class="all-popular-maker">Все производители</a>
@@ -187,36 +187,44 @@
       </section>
       <!-- Окончание секции к бонусному заданию "производители инструмента"-->
       <!--Сервисы ТЕхномарта: доставка, гарантия, кредит-->
-      <section class="service">
-        <h2>Сервисы</h2>
-        <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <ul class="service-list">
-          <li><button class="button service-list-button" type="button">Доставка</button></li>
-          <li><button class="button service-list-button" type="button">Гарантия</button></li>
-          <li><button class="button service-list-button" type="button">Кредит</button></li>
-        </ul>
-        <section class="service-delivery">
-          <h3>Доставка</h3>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+      <div class="service-wrapper">
+        <section class="service container">
+          <div class="service-tittle">
+            <h2>Сервисы</h2>
+            <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          </div>
+          <div class="service-content">
+            <ul class="service-list">
+              <li><button class="button service-list-button" type="button">Доставка</button></li>
+              <li><button class="button service-list-button" type="button">Гарантия</button></li>
+              <li><button class="button service-list-button" type="button">Кредит</button></li>
+            </ul>
+            <section class="service-delivery">
+              <h3>Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+            </section>
+          </div>  
         </section>
-      </section>
-      <div class="dilivery-contacts">
+      </div>
+      <div class="dilivery-contacts container">
         <section class="features">
           <h2 class="visually-hidden">Преимущества техномарта</h2>
           <h3>Компания Техномарт</h3>
           <p>Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит любителей сэкономить на гастарбайтерах</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
-          <ul class="transport-list">
-            <li>Деловые Линии</li>
-            <li>Автотрейдинг</li>
-            <li>ЖелДорЭкспедиция</li>
-          </ul>
-          <a class="botton" href="About.html">Подробнее о компании</a>
+          <div class="transport-list-wrapper">
+            <ul class="transport-list">
+              <li>Деловые Линии</li>
+              <li>Автотрейдинг</li>
+              <li>ЖелДорЭкспедиция</li>
+            </ul>
+            <a class="botton" href="About.html">Подробнее о компании</a>
+          </div>
         </section>
         <section class="contacts">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-          <a href="#"><img src="img/map.png" width="300px" height="158px" alt="Мы на карте"></a>
+          <a class="location-map" href="#"><img src="img/map.png" width="300px" height="158px" alt="Мы на карте"></a>
           <a class="botton" href="Contacts.html">Заблудились? Напишите нам! </a>
         </section>
       </div>
