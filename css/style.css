@@ -1396,3 +1396,24 @@ img {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
+
+.pagination-item a {
+	display: block;
+	margin-right: 10px;
+	padding-left: 16px;
+	padding-right: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+}
+
+.pagination-item:last-child a{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.currient-pagination a {
+	color: #ffffff;
+	background: #ed3543;
+}
