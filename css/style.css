@@ -555,6 +555,11 @@ ul .drill-group {
 	justify-content: center;
 }
 
+.popular-maker-item a:hover,
+.popular-maker-item a:focus {
+	box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
+}
+
 .service {
 	display: flex;
 	flex-direction: column;
@@ -936,26 +941,117 @@ h2 {
 	width: 220px;
 	font-family: "PT Sans", Arial, sans-serif;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .filters h3 {
+	margin: 0;
+	padding: 0;
+	padding-top: 9px;
+	padding-bottom: 10px;
+	padding-left: 18px;
 	font-size: 13px;
 	line-height: 18px;
-	font-weight: 400;
+	font-weight: bold;
 	background: #f7f3ec;
 }
 
 .filters legend {
+	margin-bottom: 15px;
 	font-size: 17px;
 	line-height: 30px;
 	font-weight: bold;
 }
 
+.filters fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-bottom: 1px solid #c5c5c5;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
 .filters ul {
+	margin: 0;
+	padding: 0;
 	font-size: 15px;
 	line-height: 20px;
 	list-style: none;
 }
+
+.filter-option {
+	margin-bottom: 20px;
+	padding-left: 35px;
+}
+
+.filter-option label {
+	position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+}
+
+.filter-electrical {
+	margin-bottom: 20px;
+	padding-left: 35px;	
+}
+
+.filter-electrical label {
+	position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: -2px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: -2px;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: -2px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: -2px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 
 .button-submit-filters {
 	font-family: "PT Sans", Arial, sans-serif;
@@ -994,6 +1090,7 @@ h2 {
 	padding-top: 35px;
 	padding-bottom: 35px;
 	background: #f1f5f7;
+	margin-bottom: 20px;
 }
 
 .catalog-columns {
@@ -1016,16 +1113,73 @@ h2 {
 .sort {
 	margin: 0;
 	padding: 0;
+	padding-top: 9px;
+	padding-bottom: 9px;
 	margin-bottom: 20px;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
+	flex-wrap: wrap;
 	list-style: none;
 	background: #f7f2ec;
 }
 
+.sort h3 {
+	margin: 0;
+	padding: 0;
+	padding-left: 19px; 
+	font-size: 13px;
+	line-height: 18px;
+	font-family: "PT Sans", Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 .sort-category, .sort-sequence {
 	list-style: inherit;
+}
+
+.sort-category {
+	margin: 0;
+	padding: 0;
+	margin-left: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 400px;
+}
+
+.sort-category li {
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 13px;
+    line-height: 18px;
+    font-family: "PT Sans", Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 380px;
+}
+
+.sort-category a {
+	display: block;
+	color: #c5c5c5;
+	border-bottom: 1px dashed #ed3543;
+}
+
+.sort-category a:hover,
+.sort-category a:focus {
+	color: #000000;
+	border-bottom: 1px solid #ed3543;
+}
+
+.sort-sequence{
+	margin: 0;
+	padding: 0;
+	width: 43px;
+	padding-left: 35px;
+	padding-right: 17px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .catalog {
