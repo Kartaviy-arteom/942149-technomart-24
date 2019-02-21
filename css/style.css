@@ -738,16 +738,51 @@ ul .drill-group {
 }
 
 .modal {
+	position: fixed;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 18px;
 	border-top: 7px solid #ff5257;
+	background: #ffffff;
+	box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
+	z-index: 30;
+}
+
+.modal-map {
+	border-top: none;
+	top: 90%;
+    left: 50%;
+    margin-left: -470px;
+}
+
+.modal-write-us {
+	top: 100px;
+	left: 50%;
+	width: 620px;
+	margin-left: -310px;
+}
+
+.modal-write-us fieldset {
+	border: none; 
+}
+
+.modal-write-us .modal-user-name {
+	box-sizing: border-box;
+	width: 220px;
+}
+
+.modal-map img {
+	display: block;
 }
 
 .modal input {
 	font-size: 13px;
 	color: #999999;
 	border: 2px solid #999999;
+	border-radius: 3px;
+    padding-left: 14px; 
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 .modal input:hover {
@@ -756,6 +791,48 @@ ul .drill-group {
 
 .modal input:focus {
 	border: 2px solid #ee3643;
+}
+
+.button-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;    
+	width: 21px;
+	height: 21px;
+    font-size: 0;
+    border: 0;
+    cursor: pointer;
+    background: none;
+}
+
+.button-close::before {
+	content: "";
+	position: absolute;
+	width: 5px;
+	height: 28px;
+	background: #ee3643;
+	transform: rotate(45deg);
+}
+
+.button-close::after {
+	content: "";
+	position: absolute;
+	width: 5px;
+	height: 28px;
+	background: #ee3643;
+	transform: rotate(-45deg);
+}
+
+.button-close::after,
+.button-close::before {
+	left: 8px;
+	top: -3px;
+}
+
+.modal-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .footer-menu img {
