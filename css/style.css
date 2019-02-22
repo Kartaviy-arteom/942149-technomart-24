@@ -763,12 +763,39 @@ ul .drill-group {
 }
 
 .modal-write-us fieldset {
+	margin: 0;
+	padding: 0;
+	padding-left: 80px;
+	padding-right: 80px;
+	padding-bottom: 37px;
+	padding-top: 48px;
 	border: none; 
 }
 
 .modal-write-us .modal-user-name {
 	box-sizing: border-box;
 	width: 220px;
+}
+
+.modal-write-us label {
+	margin-bottom: 8px;
+}
+
+.modal-wrapper-quetion {
+	margin-bottom: 36px;
+}
+
+.modal-wrapper-user {
+	margin-bottom: 20px;
+}
+
+.modal-write-us .user-emale {
+	box-sizing: border-box;
+	width: 220px;
+}
+
+.button-wrapper {
+	background: #f3f3f3;
 }
 
 .modal-map img {
@@ -833,6 +860,17 @@ ul .drill-group {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+
+.modal-wrapper-user {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
+.modal-wrapper-quetion {
+	width: 460px;
 }
 
 .footer-menu img {
