@@ -17,14 +17,14 @@
           </a>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
             <label>
-            <span class="header-search">Поиск:</span>
-            <input type="text" name="search-form" value=" ">
+              <input type="search" name="search-form" placeholder="Поиск:">
+              <button type="submit" class="search-form-btn"></button>
             </label>
           </form>
           <!-- добавилась форма поиска по сайту -->
-          <span class="header-bookmarks"><a href="bookmarks.html">Закладки:</a></span>
-          <span class="header-cart"><a href="cart.html">Корзина:</a></span>
-          <span class="header-order"><a href="order.html">Оформить заказ</a></span>
+          <a href="bookmarks.html" class="header-link header-bookmarks">Закладки: 0</a>
+          <a href="cart.html" class="header-link header-cart">Корзина: 0</a>
+          <a href="order.html" class="header-order">Оформить заказ</a>
         </div>
       </section>
       <section class="header-middle container">
@@ -49,7 +49,7 @@
             <li class="site-navigation-item"><a href="Contacts.html">Контакты</a></li>
           </ul>
         </nav>
-      </div> 
+      </div>
     </header>
     <main>
       <section class="tehnomart-goods container">
@@ -58,15 +58,15 @@
           <li class="goods-group">
             <div class="flag flag-new">новинка</div>
             <strong>Материалы</strong>
-            <a href="#" class="catalog-materials">на любой вкус</a>
+            <a href="#" class="catalog-button">на любой вкус</a>
           </li>
           <li class="tools-group">
             <strong>Инструмент</strong>
-            <a href="#" class="catalog-tools">на все случаи</a>
+            <a href="#" class="catalog-button">на все случаи</a>
           </li>
           <li class="technic-group">
             <strong>Техника</strong>
-            <a href="#" class="catalog-tools">для стройки</a>
+            <a href="#" class="catalog-button">для стройки</a>
           </li>
           <li class="drill-group">
             <strong>Дрели</strong>
@@ -78,11 +78,11 @@
           <li class="special-offer">
             <div class="discount-group">
               <strong>Скидки 50%</strong>
-              <a href="#" class="catalog-tools">на 350 товаров</a>
+              <a href="#" class="catalog-button">на 350 товаров</a>
             </div>
             <div class="free-dilivery-group">
               <strong>Доставка</strong>
-              <a href="#" class="catalog-tools">Бесплатно</a>
+              <a href="#" class="catalog-button">Бесплатно</a>
             </div>
           </li>
         </ul>
@@ -93,27 +93,30 @@
           <a href="#" class="all-popular-product">Все популярные товары</a>
         </div>
         <ul class="catalog-list-popular">
+
+
           <li class="catalog-item">
             <div class="catalog-item-image">
-              <img src="img/product-10.jpg" width="218" height="170" alt="Перфоратор Bosh BFG 9000">
+              <img src="img/product-10.jpg" width="218px" height="170px" alt="Перфоратор Bosh BFG 9000">
             </div>
-            <div class="catalog-item-tittle">
-              <a href="catalog-item10.html">
-                <strong class="catalog-item-name">Перфоратор Bosh BFG 9000</strong>
-              </a>
-            </div>
+            <a href="catalog-item10.html" class="catalog-item-title">Перфоратор Bosh BFG 9000</a>
             <p class="catalog-item-price">
-              <div class="old-price"><span>32 500₽</span></div>
-              <div class="button-buy"><a href="#">25 500₽</a></div>
+              <span class="old-price">32 500₽</span>
+              <a href="#" class="button-buy">25 500₽</a>
             </p>
             <div class="actions">
               <a class="buy-now" href="#">Купить</a>
               <a class="bookmark" href="bookmarks.html">В закладки</a>
             </div>
           </li>
+
+
+
+
+
            <li class="catalog-item">
             <div class="catalog-item-image">
-              <img src="img/product-1.jpg" width="218" height="170" alt="Перфоратор Bosh BFG 3000">
+              <img src="img/product-1.jpg" width="218px" height="170px" alt="Перфоратор Bosh BFG 3000">
             </div>
             <div class="catalog-item-tittle">
               <a href="catalog-item1.html">
@@ -131,7 +134,7 @@
           </li>
           <li class="catalog-item">
             <div class="catalog-item-image">
-              <img src="img/product-2.jpg" width="218" height="170" alt="Перфоратор Bosh BFG 9000">
+              <img src="img/product-2.jpg" width="218px" height="170px" alt="Перфоратор Bosh BFG 9000">
             </div>
             <div class="catalog-item-tittle">
               <a href="catalog-item2.html">
@@ -146,11 +149,12 @@
               <a class="buy-now" href="#">Купить</a>
               <a class="bookmark" href="bookmarks.html">В закладки</a>
             </div>
-          </li>  
-          <li class="catalog-item">
-            <div class="flag flag-new">новинка</div>
+          </li>
+
+
+          <li class="catalog-item catalog-item-new">
             <div class="catalog-item-image">
-              <img src="img/product-3.jpg" width="218" height="170" alt="Перфоратор Bosh BFG 9000">
+              <img src="img/product-3.jpg" width="218px" height="170px" alt="Перфоратор Bosh BFG 9000">
             </div>
             <div class="catalog-item-tittle">
               <a href="catalog-item3.html">
@@ -220,7 +224,7 @@
               <h3>Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
             </section>
-          </div>  
+          </div>
         </section>
       </div>
       <div class="dilivery-contacts container">
@@ -245,7 +249,7 @@
           <a class="botton" href="Contacts.html">Заблудились? Напишите нам! </a>
         </section>
       </div>
-    </main> 
+    </main>
     <footer  class="main-footer">
       <section class="footer-menu container">
         <a class="footer-logo">
@@ -280,16 +284,16 @@
             <li><a class="social-item" href="#"><img src="img/instagram-icon.svg" width="21px" height="21px" alt="Инстаграм"></a></li>
           </ul>
           <p class="footer-feedback">
-          Обратная связь:<br> 
+          Обратная связь:<br>
             <a  href="#">mail@htmlecademy.ru</a>
           </p>
           <p class="footer-copyright">
-          Разработано - <br> 
+          Разработано - <br>
             <a  href="https://htmlacademy.ru/">htmlacademy.ru</a>
           </p>
-        </section> 
-      </div> 
-    </footer> 
+        </section>
+      </div>
+    </footer>
       <section class="modal modal-map">
         <img src="img/big_map.png" width="940" height="446" alt="Вы можете нас найти по адресу: г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8">
         <button class="button button-close" type="button" aria-label="Закрыть окно с картой"></button>
@@ -297,23 +301,19 @@
       <section class="modal modal-write-us">
         <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
-            <div class="modal-wrapper-user">
-              <div class="modal-wrapper">
-                <label for="modal-user-name">Ваше имя:</label>
-                <input class="modal-user-name" id="modal-user-name" type="text" name="user-name" placeholder="Имя Фамилия">
-              </div>
-              <div class="modal-wrapper">
-                 <label for="user-emale">Ваш e-mail:</label>
-                  <input class="user-emale" id="user-emale" type="e-mail" name="user-emale" placeholder="email@example.com"> 
-              </div>
+            <div class="modal-wrapper">
+              <label for="modal-user-name">Ваше имя:</label>
+              <input class="modal-user-name" id="modal-user-name" type="text" name="user-name" placeholder="Имя Фамилия">
             </div>
-            <div class="modal-wrapper modal-wrapper-quetion">
+            <div class="modal-wrapper">
+              <label for="user-emale">Ваш e-mail:</label>
+              <input class="user-emale" id="user-emale" type="e-mail" name="user-emale" placeholder="email@example.com">
+            </div>
+            <div class="modal-wrapper">
               <label for="user-question">Текст письма:</label>
               <input class="user-question" id="user-question" type=text" name="user-question" placeholder="В свободной форме">
             </div>
-            <div class="button-wrapper">
-              <button class="button button-submit" type="submit">Отправить</button>
-            </div>
+            <button class="button button-submit" type="submit">Отправить</button>
             <button class="button button-close" type="button" aria-label="Закрыть окно"></button>
           </fieldset>
         </form>
