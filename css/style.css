@@ -505,7 +505,8 @@ ul .drill-group {
 	border: 1px solid #eaeaea;
 }
 
-.catalog-item-name {
+.catalog-item-title {
+	display: block;
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 20px;
@@ -583,7 +584,12 @@ ul .drill-group {
 
 .popular-maker-item a:hover,
 .popular-maker-item a:focus {
-	box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
+}
+
+.popular-maker-item a:active {
+	box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
+	opacity: 0.3;
 }
 
 .service {
@@ -612,10 +618,24 @@ ul .drill-group {
 }
 
 .service-list {
+	position: relative;
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	width: 240px;
+	margin-bottom: 100px;
+}
+
+.service-list::after {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 272px;
+	top: 50%;
+	margin-top: -136px;
+	right: 0;
+	background-image: url(../img/btn-shadow.png);
+
 }
 
 .service-list-button {
@@ -634,15 +654,25 @@ ul .drill-group {
 	border-bottom: 1px solid #293349;
 }
 
+.service-list .button-active {
+	background-color: #ffffff;
+	border-color: #ffffff;
+	color: #32425c;
+}
+
 .service-list-button:active {
 	color: #32425c;
 	background: #ffffff;
+	border-top: 1px solid #3f4f69;
+	border-bottom: 1px solid #293349;
 }
 
 .service-list-button:hover,
 .service-list-button:focus {
 	color: #ffffff;
 	background: #293449;
+	border-top: 1px solid #3f4f69;
+	border-bottom: 1px solid #293349;
 }
 
 .service-delivery {
@@ -686,8 +716,32 @@ ul .drill-group {
 	width: 540px;
 }
 
+.features h3 {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 25px;
+}
+
+.features p {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 25px;	
+}
+
 .contacts {
 	width: 300px;
+}
+
+.contacts h2 {
+	margin: 0;
+	padding: 0;	
+	margin-bottom: 25px;
+}
+
+.contacts p {
+	margin: 0;
+	padding: 0;	
+	margin-bottom: 35px;
 }
 
 .dilivery-contacts h2,
@@ -1367,6 +1421,7 @@ h2 {
 }
 
 .catalog-item .old-price {
+  display: block;
   min-height: 20px;
   margin-top: 15px;
   margin-bottom: 10px;
@@ -1374,75 +1429,124 @@ h2 {
   text-decoration: line-through;
 }
 
-.catalog-item .button-buy {
-  position: relative;
-  width: 80px;
-  margin: 10px auto;
-  margin-bottom: 20px;
-  padding: 10px 30px;
-  color: white;
-  background: #ee3643;
-  border-radius: 3px;
+.catalog-item .button-buy { 
+	display: block;
+	position: relative;
+	width: 80px;
+	margin: 10px auto;
+	margin-bottom: 20px;
+	padding: 10px 30px;
+	color: white;
+	background: #ee3643;
+ 	border-radius: 3px;
 }
 
 .catalog-item .button-buy:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -20px;
-  width: 0;
-  height: 0;
-  border: 20px solid white;
-  border-left-color: #ee3643;
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -20px;
+	width: 0;
+	height: 0;
+	border: 20px solid white;
+	border-left-color: #ee3643;
 }
 
 .actions .buy-now,
 .actions .bookmark {
-  display: block;
-  width: 129px;
-  margin: 0 auto;
-  margin-bottom: 7px;
-  padding: 7px 0;
-  background-color: #63a63e;
-  border: 3px solid #63a63e;
-  border-bottom-color: #367315;
-  border-radius:3px;
-  color: white;
-  font-size: 14px;
-  font-weight: normal;
-  font-family: "Cuprum", sans-serif;
-  line-height: 18px;
-  text-decoration: none;
-  text-transform: uppercase;
+	position: relative;
+	display: block;
+	width: 129px;
+	margin: 0 auto;
+	margin-bottom: 7px;
+	padding: 7px 0;
+	background-color: #63a63e;
+	border: 3px solid #63a63e;
+	border-bottom-color: #367315;
+	border-radius:3px;
+	color: white;
+	font-size: 14px;
+	font-weight: normal;
+	font-family: "Cuprum", sans-serif;
+	line-height: 18px;
+	text-decoration: none;
+    text-transform: uppercase;
+}
+
+.actions .buy-now::before {
+	content: "";
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background-image: url("../img/icon-cart.svg");
+	background-repeat: no-repeat;
+	top: 10px;
+	left: 11px;
+	opacity: 0.3;
+}
+
+.actions .buy-now:hover::before,
+.actions .buy-now:focus::before,
+.actions .buy-now:active::before {
+	opacity: 1;
+}
+
+.actions .buy-now:hover,
+.actions .buy-now:focus {
+	background-color: #5fbb2d;
+	border: 3px solid #5fbb2d;
+    border-bottom-color: #367315;
+}
+
+.actions .buy-now:active {
+	background-color: #518534;
+	border: 3px solid #518534;
+    border-bottom-color: #367315;
 }
 
 .actions .bookmark {
-  color: #32425c;
-  background: white;
-  border-bottom-color: #63a63e;
+	color: #32425c;
+	background: white;
+	border-bottom-color: #63a63e;
+}
+
+.actions .bookmark:hover,
+.actions .bookmark:focus {
+	border-color: #32425c;
+	color: #32425c;
+}
+
+.actions .bookmark:active {
+	border-color: #c1c6ce;
+	color: #c1c6ce;
 }
 
 .catalog-item .actions {
-  display: none;
+    display: none;
 }
 
 .catalog-item:hover .actions {
-  display: block;
+    display: block;
 }
 
 .catalog-items {
-  font-size: 0;
+    font-size: 0;
 }
 
 .catalog-item {
-  font-size: 16px;
+    font-size: 16px;
+}
+
+.catalog-item:hover,
+.catalog-item:focus {
+    box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
 }
 
 .button-buy a {
-	color: #ffffff;
+    color: #ffffff;
 }
 
-.catalog-item:nth-child(4) {
+.catalog-item:nth-child(4n) {
 	margin-right: 0px;
 }
 
@@ -1582,7 +1686,7 @@ img {
 
 .catalog-button {
 	box-sizing: border-box;
-	padding: 10px auto;
+	padding: 10px;
 	text-align: center;
 	margin-bottom: 22px;
 	margin-left: 25px;
@@ -1607,21 +1711,37 @@ img {
 }
 
 .tehnomart-goods-group .flag {
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  width: 60px;
-  height: 60px;
-
-  text-indent: -1000px;
-  overflow: hidden;
-  z-index: 20;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    text-indent: -1000px;
+    overflow: hidden;
+    z-index: 20;
 }
 
 .tehnomart-goods-group .flag-new {
-  background-image: url("../img/new-flag.png");
-  background-repeat: no-repeat;
+	background-image: url("../img/new-flag.png");
+    background-repeat: no-repeat;
+}
+
+.catalog-new-item {
+	position: relative;
+}
+
+.catalog-new-item::before {
+	content: "Новинка";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60px;
+	height: 60px;
+	text-indent: -1000px;
+    overflow: hidden;
+	z-index: 20;
+	background-image: url("../img/new-flag.png");
+	background-repeat: no-repeat;
 }
 
 
@@ -1878,3 +1998,7 @@ img {
 	width: 218px;
 	height: 170px;
 }
+
+
+
+
