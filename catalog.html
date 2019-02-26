@@ -9,33 +9,31 @@
     <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <header class="main-header">
+    <header class="inner-header">
       <section class="header-top-menu">
         <div class="header-top-content container">
-          <a class="main-header-logo" href="index.html">
+          <a class="main-header-logo">
             <img src="img/logo.svg" width="110px" height="17px" alt="Логотип интернет-магазина «Техномарт»">
           </a>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-           <label>
-             <span class="header-search">Поиск:</span>
-             <input type="text" name="search-form" value=" ">
-           </label>
+            <label>
+              <input type="search" name="search-form" placeholder="Поиск:">
+              <button type="submit" class="search-form-btn"></button>
+            </label>
           </form>
-          <span class="header-bookmarks"><a href="bookmarks.html">Закладки: 0</a></span>
-          <span class="header-cart goods-in-cart"><a href="cart.html">Корзина: 10</a></span>
-          <span class="header-order"><a href="order.html">Оформить заказ</a></span>
+          <a href="bookmarks.html" class="header-link header-bookmarks">Закладки: 0</a>
+          <a href="cart.html" class="header-link header-cart">Корзина: 0</a>
+          <a href="order.html" class="header-order">Оформить заказ</a>
         </div>
       </section>
       <section class="header-middle container">
         <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
         <p class="header-contacts">
-          <span>+7 (812) 555-05-55</span><br>
-          г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8
+          <span>+7 (812) 555-05-55</span><br>г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8
         </p>
         <ul class="user-navigation">
-          <li class="user-name"><a href="#">Равшан Джамшудович</a>
+          <li class="user-name-menu"><a class="user-name" href="#">Равшан Джамшудович</a>
             <a class="sing-out" href="#" aria-label="Выйти">
-              <img src="img/icon-logout.svg" width="20px" height="17px" alt="">
             </a>
           </li>  
           <li class="my-order"><a href="#">Мои заказы</a></li>
@@ -131,17 +129,13 @@
               <ul class="catalog-list">
                 <li class="catalog-item">
                   <div class="catalog-item-image">
-                    <img src="img/product-1.jpg" width="218" height="170" alt="Перфоратор Bosh BFG 3000">
+                    <img src="img/product-1.jpg" width="218px" height="170px" alt="Перфоратор Bosh BFG 3000">
                   </div>
-                  <div class="catalog-item-tittle">
-                    <a href="catalog-item1.html">
-                     <strong class="catalog-item-name">Перфоратор Bosh BFG 3000</strong>
-                    </a>
-                  </div>
-                    <p class="catalog-item-price">
-                      <div class="old-price"><span>22 500₽</span></div>
-                      <div class="button-buy"><a href="#">15 500₽</a></div>
-                    </p>
+                  <a href="catalog-item1.html" class="catalog-item-title">Перфоратор Bosh BFG 3000</a>
+                  <p class="catalog-item-price">
+                    <span class="old-price">22 500₽</span>
+                    <a href="#" class="button-buy">15 500₽</a>
+                  </p>
                   <div class="actions">
                     <a class="buy-now" href="#">Купить</a>
                     <a class="bookmark" href="bookmarks.html">В закладки</a>
@@ -149,35 +143,82 @@
                 </li>
                 <li class="catalog-item">
                   <div class="catalog-item-image">
-                    <img src="img/product-2.jpg" width="218" height="170" alt="Перфоратор Bosh BFG 9000">
+                    <img src="img/product-2.jpg" width="218px" height="170px" alt="Перфоратор Bosh BFG 6000">
                   </div>
-                  <div class="catalog-item-tittle">
-                    <a href="catalog-item2.html">
-                      <strong class="catalog-item-name">Перфоратор Bosh BFG 6000</strong>
-                    </a>
-                  </div>
+                  <a href="catalog-item2.html" class="catalog-item-title">Перфоратор Bosh BFG 6000</a>
                   <p class="catalog-item-price">
-                    <div class="old-price"><span>30 500₽</span></div>
-                    <div class="button-buy"><a href="#">25 500₽</a></div>
+                    <span class="old-price">30 500₽</span>
+                    <a href="#" class="button-buy">25 500₽</a>
+                  </p>
+                  <div class="actions">
+                    <a class="buy-now" href="#">Купить</a>
+                    <a class="bookmark" href="bookmarks.html">В закладки</a>
+                  </div>
+                </li>
+                <li class="catalog-item catalog-new-item">
+                  <div class="catalog-item-image">
+                    <img src="img/product-3.jpg" width="218px" height="170px" alt="Перфоратор Bosh BFG 2000">
+                  </div>
+                  <a href="catalog-item3.html" class="catalog-item-title">Перфоратор Bosh BFG 2000</a>
+                  <p class="catalog-item-price">
+                    <span class="old-price"></span>
+                    <a href="#" class="button-buy">12 500₽</a>
+                  </p>
+                  <div class="actions">
+                    <a class="buy-now" href="#">Купить</a>
+                    <a class="bookmark" href="bookmarks.html">В закладки</a>
+                  </div>
+                </li>
+                <li class="catalog-item">
+                  <div class="catalog-item-image">
+                    <img src="img/product-1.jpg" width="218px" height="170px" alt="Перфоратор Bosh BFG 3000">
+                  </div>
+                  <a href="catalog-item1.html" class="catalog-item-title">Перфоратор Bosh BFG 3000</a>
+                  <p class="catalog-item-price">
+                    <span class="old-price">22 500₽</span>
+                    <a href="#" class="button-buy">15 500₽</a>
+                  </p>
+                  <div class="actions">
+                    <a class="buy-now" href="#">Купить</a>
+                    <a class="bookmark" href="bookmarks.html">В закладки</a>
+                  </div>
+                </li>
+                <li class="catalog-item  catalog-new-item">
+                  <div class="catalog-item-image">
+                    <img src="img/product-2.jpg" width="218px" height="170px" alt="Перфоратор Bosh BFG 6000">
+                  </div>
+                  <a href="catalog-item2.html" class="catalog-item-title">Перфоратор Bosh BFG 6000</a>
+                  <p class="catalog-item-price">
+                    <span class="old-price">30 500₽</span>
+                    <a href="#" class="button-buy">25 500₽</a>
+                  </p>
+                  <div class="actions">
+                    <a class="buy-now" href="#">Купить</a>
+                    <a class="bookmark" href="bookmarks.html">В закладки</a>
+                  </div>
+                </li>
+                <li class="catalog-item">
+                  <div class="catalog-item-image">
+                    <img src="img/product-3.jpg" width="218px" height="170px" alt="Перфоратор Bosh BFG 2000">
+                  </div>
+                  <a href="catalog-item3.html" class="catalog-item-title">Перфоратор Bosh BFG 2000</a>
+                  <p class="catalog-item-price">
+                    <span class="old-price"></span>
+                    <a href="#" class="button-buy">12 500₽</a>
                   </p>
                   <div class="actions">
                     <a class="buy-now" href="#">Купить</a>
                     <a class="bookmark" href="bookmarks.html">В закладки</a>
                   </div>
                 </li> 
-                <li class="catalog-item">
-                  <div class="flag flag-new">новинка</div>
+                <li class="catalog-item catalog-new-item">
                   <div class="catalog-item-image">
-                    <img src="img/product-3.jpg" width="218" height="170" alt="Перфоратор Bosh BFG 9000">
+                    <img src="img/product-1.jpg" width="218px" height="170px" alt="Перфоратор Bosh BFG 3000">
                   </div>
-                  <div class="catalog-item-tittle">
-                    <a href="catalog-item3.html">
-                      <strong class="catalog-item-name">Перфоратор Bosh BFG 2000</strong>
-                    </a>
-                  </div>
+                  <a href="catalog-item1.html" class="catalog-item-title">Перфоратор Bosh BFG 3000</a>
                   <p class="catalog-item-price">
-                    <div class="old-price"><span></span></div>
-                    <div class="button-buy"><a href="#">12 500₽</a></div>
+                    <span class="old-price">22 500₽</span>
+                    <a href="#" class="button-buy">15 500₽</a>
                   </p>
                   <div class="actions">
                     <a class="buy-now" href="#">Купить</a>
@@ -186,117 +227,35 @@
                 </li>
                 <li class="catalog-item">
                   <div class="catalog-item-image">
-                    <img src="img/product-1.jpg" width="218" height="170" alt="Перфоратор Bosh BFG 3000">
+                    <img src="img/product-2.jpg" width="218px" height="170px" alt="Перфоратор Bosh BFG 6000">
                   </div>
-                  <div class="catalog-item-tittle">
-                    <a href="catalog-item1.html">
-                     <strong class="catalog-item-name">Перфоратор Bosh BFG 3000</strong>
-                    </a>
-                  </div>
-                    <p class="catalog-item-price">
-                      <div class="old-price"><span>22 500₽</span></div>
-                      <div class="button-buy"><a href="#">15 500₽</a></div>
-                    </p>
+                  <a href="catalog-item2.html" class="catalog-item-title">Перфоратор Bosh BFG 6000</a>
+                  <p class="catalog-item-price">
+                    <span class="old-price">30 500₽</span>
+                    <a href="#" class="button-buy">25 500₽</a>
+                  </p>
                   <div class="actions">
                     <a class="buy-now" href="#">Купить</a>
                     <a class="bookmark" href="bookmarks.html">В закладки</a>
                   </div>
                 </li>
                 <li class="catalog-item">
-                  <div class="flag flag-new">новинка</div>
                   <div class="catalog-item-image">
-                    <img src="img/product-2.jpg" width="218" height="170" alt="Перфоратор Bosh BFG 9000">
+                    <img src="img/product-3.jpg" width="218px" height="170px" alt="Перфоратор Bosh BFG 2000">
                   </div>
-                  <div class="catalog-item-tittle">
-                    <a href="catalog-item2.html">
-                      <strong class="catalog-item-name">Перфоратор Bosh BFG 6000</strong>
-                    </a>
-                  </div>
+                  <a href="catalog-item3.html" class="catalog-item-title">Перфоратор Bosh BFG 2000</a>
                   <p class="catalog-item-price">
-                    <div class="old-price"><span>30 500₽</span></div>
-                    <div class="button-buy"><a href="#">25 500₽</a></div>
+                    <span class="old-price"></span>
+                    <a href="#" class="button-buy">12 500₽</a>
                   </p>
                   <div class="actions">
                     <a class="buy-now" href="#">Купить</a>
                     <a class="bookmark" href="bookmarks.html">В закладки</a>
                   </div>
                 </li> 
-                <li class="catalog-item">
-                  <div class="catalog-item-image">
-                    <img src="img/product-3.jpg" width="218" height="170" alt="Перфоратор Bosh BFG 9000">
-                  </div>
-                  <div class="catalog-item-tittle">
-                    <a href="catalog-item3.html">
-                      <strong class="catalog-item-name">Перфоратор Bosh BFG 2000</strong>
-                    </a>
-                  </div>
-                  <p class="catalog-item-price">
-                    <div class="old-price"><span></span></div>
-                    <div class="button-buy"><a href="#">12 500₽</a></div>
-                  </p>
-                  <div class="actions">
-                    <a class="buy-now" href="#">Купить</a>
-                    <a class="bookmark" href="bookmarks.html">В закладки</a>
-                  </div>
-                </li>
-                <li class="catalog-item">
-                  <div class="flag flag-new">новинка</div>
-                  <div class="catalog-item-image">
-                    <img src="img/product-1.jpg" width="218" height="170" alt="Перфоратор Bosh BFG 3000">
-                  </div>
-                  <div class="catalog-item-tittle">
-                    <a href="catalog-item1.html">
-                     <strong class="catalog-item-name">Перфоратор Bosh BFG 3000</strong>
-                    </a>
-                  </div>
-                    <p class="catalog-item-price">
-                      <div class="old-price"><span>22 500₽</span></div>
-                      <div class="button-buy"><a href="#">15 500₽</a></div>
-                    </p>
-                  <div class="actions">
-                    <a class="buy-now" href="#">Купить</a>
-                    <a class="bookmark" href="bookmarks.html">В закладки</a>
-                  </div>
-                </li>
-                <li class="catalog-item">
-                  <div class="catalog-item-image">
-                    <img src="img/product-2.jpg" width="218" height="170" alt="Перфоратор Bosh BFG 9000">
-                  </div>
-                  <div class="catalog-item-tittle">
-                    <a href="catalog-item2.html">
-                      <strong class="catalog-item-name">Перфоратор Bosh BFG 6000</strong>
-                    </a>
-                  </div>
-                  <p class="catalog-item-price">
-                    <div class="old-price"><span>30 500₽</span></div>
-                    <div class="button-buy"><a href="#">25 500₽</a></div>
-                  </p>
-                  <div class="actions">
-                    <a class="buy-now" href="#">Купить</a>
-                    <a class="bookmark" href="bookmarks.html">В закладки</a>
-                  </div>
-                </li> 
-                <li class="catalog-item">
-                  <div class="catalog-item-image">
-                    <img src="img/product-3.jpg" width="218" height="170" alt="Перфоратор Bosh BFG 9000">
-                  </div>
-                  <div class="catalog-item-tittle">
-                    <a href="catalog-item3.html">
-                      <strong class="catalog-item-name">Перфоратор Bosh BFG 2000</strong>
-                    </a>
-                  </div>
-                  <p class="catalog-item-price">
-                    <div class="old-price"><span></span></div>
-                    <div class="button-buy"><a href="#">12 500₽</a></div>
-                  </p>
-                  <div class="actions">
-                    <a class="buy-now" href="#">Купить</a>
-                    <a class="bookmark" href="bookmarks.html">В закладки</a>
-                  </div>
-                </li>                                
               </ul>
               <ul class="pagination-list">
-                <li class="pagination-item currient-pagination"><a>1</a></li>
+                <li class="pagination-item"><a class="currient-page">1</a></li>
                 <li class="pagination-item"><a href="#">2</a></li>
                 <li class="pagination-item"><a href="#">3</a></li>
                 <li class="pagination-item"><a href="#">Следующая</a></li>
