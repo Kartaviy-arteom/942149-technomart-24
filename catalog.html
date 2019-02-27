@@ -334,5 +334,16 @@
         <a href="order.html" class="button order-page">Оформить заказ</a>
       </div>
     </section>
+    <script>
+      var addProduct = document.querySelector(".buy-now");
+
+      var popupInCart = document.querySelector(".modal-order");
+
+      addProduct.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popupInCart.classList.add("modal-order-show");
+      });
+
+    </script>
   </body>
 </html>

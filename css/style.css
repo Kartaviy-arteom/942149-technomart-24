@@ -852,6 +852,7 @@ ul .drill-group {
 }
 
 .modal-order {
+	display: none;
 	top: 410px;
 	left: 50%;
 	width: 620px;
@@ -2308,6 +2309,9 @@ img {
 	height: 170px;
 }
 
+.modal-order-show {
+	display: block;
+}
 
 
 
