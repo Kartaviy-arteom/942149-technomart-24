@@ -845,18 +845,18 @@ ul .drill-group {
 }
 
 .modal-write-us {
-	top: 100px;
-	left: 50%;
 	width: 620px;
-	margin-left: -310px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 }
 
 .modal-order {
-	display: none;
-	top: 410px;
+	display: block;
+	top: 50%;
 	left: 50%;
+	transform: translate(-50%,-50%);
 	width: 620px;
-	margin-left: -310px;
 	text-align: center;
 }
 
