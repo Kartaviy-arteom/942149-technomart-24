@@ -869,6 +869,7 @@ ul .drill-group {
 	width: 220px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	cursor: pointer;
 	font-size: 14px;
 	line-height: 18px;
 	color: rgb(0,0,0);
