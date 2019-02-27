@@ -435,12 +435,15 @@ ul .drill-group {
 .all-popular-product:hover,
 .all-popular-product:focus,
 .all-popular-maker:hover,
-.all-popular-maker:focus {
+.all-popular-maker:focus,
+.modal-order-nav a:hover,
+.modal-order-nav a:focus {
     background-color: #ca2b36;
 }
 
 .all-popular-product:active,
-.all-popular-maker:active {
+.all-popular-maker:active,
+.modal-order-nav a:active {
 	background-color: #ba2731;
 }
 
@@ -847,6 +850,34 @@ ul .drill-group {
 	margin-left: -310px;
 }
 
+.modal-order {
+	top: 200px;
+	left: 50%;
+	width: 620px;
+	margin-left: -310px;
+	text-align: center;
+}
+
+.modal-order fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+.button-continue {
+	width: 220px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 14px;
+	line-height: 18px;
+	color: rgb(0,0,0);
+    text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	background-color: #ffffff;
+	border: none;
+}
+
 .modal-write-us label {
 	padding-bottom: 8px;
 }
@@ -921,6 +952,65 @@ ul .drill-group {
 
 .modal-submit-wrapper {
 	background: #f3f3f3;
+}
+
+.modal-order-nav {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	padding-top: 37px;
+	padding-bottom: 37px;
+	background: #f3f3f3;
+	padding-right: 80px;
+	padding-left: 80px;
+}
+
+.order-now fieldset {
+	padding: 0;
+	margin: 0;
+}
+
+.order-now {
+	
+}
+
+.modal-order-nav a {
+	display: block;
+	box-sizing: border-box;
+    width: 220px;
+    padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 3px;
+	font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+	text-align: center;
+	text-transform: uppercase;
+	background: #ed3543;
+}
+
+.modal-order span {
+	display: block;
+	position: relative;
+	padding-top: 68px;
+	padding-bottom: 65px;
+	padding-left: 55px;
+	font-size: 30px;
+	line-height: 30px;
+	color: rgb(0,0,0);
+}
+
+.modal-order span::before {
+	content: "";
+	position: absolute;
+	width: 66px;
+	height: 66px;
+	top: 48px;
+	left: 81px;
+	background-image: url("../img/icon-mark.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
 }
 
 .button-close {
