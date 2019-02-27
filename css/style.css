@@ -824,7 +824,6 @@ ul .drill-group {
 
 .modal {
 	position: fixed;
-	display: none;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 18px;
@@ -848,13 +847,46 @@ ul .drill-group {
 	margin-left: -310px;
 }
 
-.modal-write-us fieldset {
-	border: none;
+.modal-write-us label {
+	padding-bottom: 8px;
 }
 
-.modal-write-us .modal-user-name {
-	box-sizing: border-box;
+.modal-user-contact {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;	
+	padding-top: 42px;
+	margin-bottom: 17px;
+}
+
+.modal-write-us fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+.modal-wrapper {
 	width: 220px;
+}
+
+.modal-wrapper-message {
+	padding-left: 80px;
+	padding-right: 80px;
+	width: auto;
+	margin-bottom: 37px;
+}
+
+.modal-wrapper-message textarea {
+    font-size: 13px;
+    color: #999999;
+    border: 2px solid #999999;
+    border-radius: 3px;
+    padding-top: 8px;
+    padding-left: 14px;
+    padding-bottom: 8px;
+    padding-right: 14px;
+    resize: none;
 }
 
 .modal-map img {
@@ -873,10 +905,22 @@ ul .drill-group {
 
 .modal input:hover {
 	border: 2px solid #b5b5b5;
+	outline: none;
 }
 
-.modal input:focus {
-	border: 2px solid #ee3643;
+.modal textarea:hover {
+	border: 2px solid #b5b5b5;
+	outline: none;
+}
+
+.modal input:focus,
+.modal textarea:focus { 
+	border: 2px solid #ed3543;
+	outline: none;
+}
+
+.modal-submit-wrapper {
+	background: #f3f3f3;
 }
 
 .button-close {
@@ -919,6 +963,45 @@ ul .drill-group {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+
+.modal-wrapper-user {
+	padding-left: 80px;
+}
+
+.modal-wrapper-email {
+	padding-right: 80px;
+}
+
+.modal-submit-wrapper {
+	padding-top: 37px;
+	padding-bottom: 37px;
+	text-align: center;	
+}
+
+.modal-write-us .button-submit {
+	box-sizing: border-box;
+	width: 460px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 3px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #ee3643;
+    border: none;
+}
+
+.modal-write-us .button-submit:hover,
+.modal-write-us .button-submit:focus {
+	background-color: #ca2b36;
+}
+
+.modal-write-us .button-submit:active {
+	background-color: #ba2731;
 }
 
 .footer-menu img {

@@ -277,19 +277,23 @@
       <section class="modal modal-write-us">
         <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
-            <div class="modal-wrapper">
-              <label for="modal-user-name">Ваше имя:</label>
-              <input class="modal-user-name" id="modal-user-name" type="text" name="user-name" placeholder="Имя Фамилия">
+            <div class="modal-user-contact">
+              <div class="modal-wrapper modal-wrapper-user">
+                <label for="modal-user-name">Ваше имя:</label>
+                <input class="modal-user-name" id="modal-user-name" type="text" name="user-name" placeholder="Имя Фамилия">
+              </div>
+              <div class="modal-wrapper modal-wrapper-email">
+                <label for="user-email">Ваш e-mail:</label>
+                <input class="user-email" id="user-email" type="e-mail" name="user-email" placeholder="email@example.com">
+              </div>
             </div>
-            <div class="modal-wrapper">
-              <label for="user-emale">Ваш e-mail:</label>
-              <input class="user-emale" id="user-emale" type="e-mail" name="user-emale" placeholder="email@example.com">
-            </div>
-            <div class="modal-wrapper">
+            <div class="modal-wrapper modal-wrapper-message">
               <label for="user-question">Текст письма:</label>
-              <input class="user-question" id="user-question" type=text" name="user-question" placeholder="В свободной форме">
+              <textarea class="user-question" id="user-question" rows="6" placeholder="Ваше сообщение"></textarea>
             </div>
-            <button class="button button-submit" type="submit">Отправить</button>
+            <div class="modal-submit-wrapper">  
+              <button class="button button-submit" type="submit">Отправить</button>
+            </div>
             <button class="button button-close" type="button" aria-label="Закрыть окно"></button>
           </fieldset>
         </form>
