@@ -838,9 +838,10 @@ ul .drill-group {
 
 .modal-map {
 	border-top: none;
-	top: 90%;
+	top: 50%;
     left: 50%;
     margin-left: -470px;
+    margin-top: -223px;
 }
 
 .modal-write-us {
@@ -851,7 +852,7 @@ ul .drill-group {
 }
 
 .modal-order {
-	top: 200px;
+	top: 410px;
 	left: 50%;
 	width: 620px;
 	margin-left: -310px;
