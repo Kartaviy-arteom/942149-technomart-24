@@ -840,8 +840,8 @@ ul .drill-group {
 	border-top: none;
 	top: 50%;
     left: 50%;
-    margin-left: -470px;
-    margin-top: -223px;
+    width: 940px;
+	transform: translate(-50%,-50%);
 }
 
 .modal-write-us {
