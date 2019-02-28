@@ -837,6 +837,7 @@ ul .drill-group {
 }
 
 .modal-map {
+	display: none;
 	border-top: none;
 	top: 50%;
     left: 50%;
@@ -845,6 +846,7 @@ ul .drill-group {
 }
 
 .modal-write-us {
+	display: none;
 	width: 620px;
 	top: 50%;
 	left: 50%;
@@ -852,7 +854,7 @@ ul .drill-group {
 }
 
 .modal-order {
-	display: block;
+	display: none;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
@@ -973,10 +975,6 @@ ul .drill-group {
 	margin: 0;
 }
 
-.order-now {
-	
-}
-
 .modal-order-nav a {
 	display: block;
 	box-sizing: border-box;
@@ -1026,6 +1024,7 @@ ul .drill-group {
     border: 0;
     cursor: pointer;
     background: none;
+    z-index: 40;
 }
 
 .button-close::before {
@@ -1035,6 +1034,7 @@ ul .drill-group {
 	height: 28px;
 	background: #ee3643;
 	transform: rotate(45deg);
+	z-index: 40;
 }
 
 .button-close::after {
@@ -1044,6 +1044,7 @@ ul .drill-group {
 	height: 28px;
 	background: #ee3643;
 	transform: rotate(-45deg);
+	z-index: 40;
 }
 
 .button-close::after,
@@ -2311,7 +2312,78 @@ img {
 
 .modal-order-show {
 	display: block;
+	animation: bounce-sprint 0.8s;
 }
 
+.modal-show {
+	display: block;
+	animation: bounce-sprint 0.8s;
+}
 
+/*анимация модальных окон*/
+@keyframes bounce-sprint {
+	0% {
+    opacity: 0.2;
+	}
+
+	70% {
+	opacity: 0.6;
+	}
+
+	75% {
+	opacity: 0.65;
+	}
+
+	80% {
+	opacity: 0.75;
+	}
+
+	90% {
+	opacity: 0.85;
+	}
+
+    100% {
+    opacity: 1;
+    }
+}
+
+.modal-map iframe {
+  position: relative;
+  z-index: 35;
+  border: none;
+}
+
+.modal-map div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin: 0;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-5%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(5%);
+  }
+}
 

@@ -316,12 +316,6 @@
         </section> 
       </div> 
     </footer> 
-    <section class="modal modal-incart"> <!-- Модальное окно товар добавлен в карзину-->
-      <p>Товар добавлен в корзину!
-        <a href="order.html" class="btn-order">Оформить заказ</a>
-        <button class="botton continue" type="button">Продолжить покупки</button>
-      </p>
-    </section> 
     <section class="modal modal-order">
       <span>Товар добавлен в корзину!</span>
       <div class="modal-order-nav"> 
@@ -335,15 +329,36 @@
       </div>
     </section>
     <script>
-      var addProduct = document.querySelector(".buy-now");
+      var addProduct = document.querySelectorAll(".buy-now");
 
       var popupInCart = document.querySelector(".modal-order");
+      var close = popupInCart.querySelector(".button-close");
+      var buyMore = popupInCart.querySelector(".button-continue");
+      var buy = popupInCart.querySelector(".order-page");
 
-      addProduct.addEventListener("click", function (evt) {
+      for (var i = 0; i < addProduct.length; i++) {
+        addProduct[i].addEventListener("click", function (evt) {
+          evt.preventDefault();
+          popupInCart.classList.add("modal-order-show");
+          buy.focus();
+        });
+      }
+      close.addEventListener("click", function (evt) {
         evt.preventDefault();
-        popupInCart.classList.add("modal-order-show");
+        popupInCart.classList.remove("modal-order-show");
       });
-
+      buyMore.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popupInCart.classList.remove("modal-order-show");
+      });   
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          evt.preventDefault();
+          if (popupInCart.classList.contains("modal-order-show")) {
+            popupInCart.classList.remove("modal-order-show");
+          } 
+        }
+      });   
     </script>
   </body>
 </html>
