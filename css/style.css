@@ -385,7 +385,7 @@ input[type="search"]::placeholder { color: #ffffff; }
 	margin-bottom: 33px;
 }
 
-.tehnomart-goods-group li {
+.tehnomart-goods-group > li {
 	position: relative;
 	list-style: none;
 	width: 300px;
@@ -419,7 +419,8 @@ input[type="search"]::placeholder { color: #ffffff; }
     text-align: left;
 }
 
-.drill-group strong {
+.drill-group strong,
+.perforator-group strong {
 	font-size: 36px;
     line-height: 36px;
     text-transform: uppercase;
@@ -437,20 +438,25 @@ input[type="search"]::placeholder { color: #ffffff; }
 	background-color: #db90d8;
 }
 
-ul .drill-group {
+ul .drill-group,
+ul .perforator-group {
 	background-color: #544238;
 	width: 620px;
 }
 
-.drill-group a {
+.drill-group a,
+.perforator-group a {
 	background-color: #ed3543;
 }
 .drill-group a:hover,
-.drill-group a:focus {
+.drill-group a:focus,
+.perforator-group a:hover,
+.perforator-group a:focus {
 	background-color: #ca2b36;
 }
 
-.drill-group a:active {
+.drill-group a:active,
+.perforator-group a:active {
 	background-color: #ba2731;
 }
 
@@ -469,7 +475,8 @@ ul .drill-group {
 	background-color: #ba2731;
 }
 
-.drill-group span {
+.drill-group span,
+.perforator-group span {
 	color: rgb(255,255,255);
 }
 
@@ -721,6 +728,7 @@ ul .drill-group {
 }
 
 .service-delivery {
+	display: none;
 	width: 620px;
 	padding-bottom: 130px;
 	background-image: url("../img/track.png");
@@ -728,7 +736,9 @@ ul .drill-group {
 	background-position: 100% 100%;
 }
 
-.service-delivery h3 {
+.service-delivery h3,
+.service-guarantee h3,
+.service-loan h3 {
 	margin: 0;
 	padding: 0;
 	font-family: "Cuprum", Arial, sans-serif;
@@ -740,7 +750,9 @@ ul .drill-group {
 	margin-bottom: 23px;
 }
 
-.service-delivery p {
+.service-delivery p,
+.service-guarantee p,
+.service-loan p {
 	width: 300px;
 	margin: 0;
 	padding: 0;
@@ -749,7 +761,9 @@ ul .drill-group {
 	text-align: left;
 }
 
-.service-delivery span {
+.service-delivery span,
+.service-guarantee span,
+.service-loan span {
 	display: inline-block;
 	width: 300px;
 	margin: 0;
@@ -757,6 +771,24 @@ ul .drill-group {
 	padding-right: 76px;
 	box-sizing: border-box;
 	text-align: left;
+}
+
+.service-guarantee {
+	display: none;
+	width: 620px;
+	padding-bottom: 130px;
+	background-image: url("../img/guarantee.png");
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+}
+
+.service-loan {
+	display: block;
+	width: 620px;
+	padding-bottom: 130px;
+	background-image: url("../img/loan.png");
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
 }
 
 .dilivery-contacts {
@@ -2055,7 +2087,7 @@ img {
 	width: 135px;
 }
 
-.tehnomart-goods-group li,
+.tehnomart-goods-group > li,
 .discount-group,
 .free-dilivery-group {
 	display: flex;
@@ -2149,29 +2181,36 @@ img {
 }
 
 .drill-group {
-	height: inherit;
+	display: flex;
+	flex-direction: column;
 	justify-content: flex-start;
+	height: 100%;
 	background-image: url("../img/drill-group.jpg");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 }
 
-.drill-group span {
+.drill-group span,
+.perforator-group span {
 	font-size: 18px;
 	line-height: 24px;
 	padding-left: 25px;
 
 }
 
-.drill-group strong {
+.drill-group strong,
+.perforator-group strong {
 	padding-bottom: 0;
 }
 
-.drill-tools {
+.drill-tools,
+.perforator-tools {
 	margin-top: auto;
 	margin-bottom: 22px;
     margin-left: 25px;
-    padding: 10px 49px;
+    padding: 10px 0;
+    width: 195px;
+    text-align: center;
 	font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
@@ -2551,17 +2590,70 @@ img {
 	background-color: #444444; 
 }
 
+.slider {
+	position: relative;
+}
+
+.slider-controls {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: absolute;
+	width: 30px;
+	height: 10px;
+	top: 220px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 3;
+}
+
+.slider-controls span {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	width: 10px;
+	height: 10px;
+	background-color: #ffffff;
+	border-radius: 5px;
+}
+
+.slider-controls .active::before {
+	content: "";
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #ed3543;
+	border-radius: 50%;
+
+} 
+
 .slider-list {
+	height: 100%;
 	margin: 0;
 	padding: 0;
 }
 
 .perforator-group {
+	display: flex;
 	display: none;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: 100%;
+	background-image: url("../img/perforator-group.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 }
 
 ul .slider-group {
 	background-color: #544238;
+	width: 620px;
+	background-color: rgba(3,3,3,0.2);
+}
+
+.tehnomart-goods-group .slider {
 	width: 620px;
 }
 
