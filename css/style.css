@@ -1364,7 +1364,7 @@ h2 {
 }
 
 .filters legend {
-	margin-bottom: 15px;
+	margin-bottom: 16px;
 	font-size: 17px;
 	line-height: 30px;
 	font-weight: bold;
@@ -1375,12 +1375,12 @@ h2 {
 	padding: 0;
 	border: none;
 	border-bottom: 1px solid #c5c5c5;
-	margin-bottom: 15px;
+	margin-bottom: 17px;
 }
 
 .filters fieldset:nth-last-child(2) {
 	border-bottom: none;
-	margin-bottom: 60px;
+	margin-bottom: 58px;
 }
 
 .filters ul {
@@ -2149,6 +2149,7 @@ img {
 }
 
 .drill-group {
+	height: inherit;
 	justify-content: flex-start;
 	background-image: url("../img/drill-group.jpg");
 	background-repeat: no-repeat;
@@ -2473,8 +2474,94 @@ img {
 }
 
 .range-price {
+	position: relative;
+	margin-bottom: 6px;
+	height: 80px;
+	background-color: #f7f2ec; 
+}
+
+.range-price span {
+	position: absolute;
+	width: 20px;
+	height: 23px;
+	top: 27px;
+	background-image: url("../img/filter-button.svg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border-radius: 3px;
+	z-index: 2;
+}
+
+.min-price {
+	left: 20px;
+}
+
+.max-price {
+	right: 40px;
+}
+
+.range-price::before {
+	content: "";
+	position: absolute;
+	top: 36px;
+	left: 40px;
+	width: 120px;
+	height: 2px;
+	background-color: #00ca74;
+}
+
+.range-price::after {
+	content: "";
+	position: absolute;
+	top: 36px;
+	right: 20px;
+	width: 20px;
+	height: 2px;
+	background-color: #d7dbdd;
+}
+
+.price-selection {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.price-selection output {
+	position: relative;
 	margin-bottom: 25px;
-	height: 127px;
-	background-color: lightgrey; 
+	padding-top: 9px;
+	padding-bottom: 11px;
+	width: 95px;
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: 400;
+	font-family: "PT Sans", Arial, sans-serif;
+	text-align: center;
+	background-color: #f7f2ec; 
+	border-radius: 3px;
+}
+
+.max-price-value::before {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 1px;
+	top: 19px;
+	left: -20px;
+	background-color: #444444; 
+}
+
+.slider-list {
+	margin: 0;
+	padding: 0;
+}
+
+.perforator-group {
+	display: none;
+}
+
+ul .slider-group {
+	background-color: #544238;
+	width: 620px;
 }
 
