@@ -631,7 +631,7 @@ ul .perforator-group {
 	color: #000000;
 }
 
-.popular-maker-tittle {
+.popular-maker-title {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -652,12 +652,12 @@ ul .perforator-group {
 	        align-items: center;
 }
 
-.popular-maker-tittle {
+.popular-maker-title {
 	padding: 25px 30px;
 	padding-right: 25px;
 }
 
-.popular-maker-tittle h2 {
+.popular-maker-title h2 {
 	margin: 0;
 	padding: 0;
 	font-weight: 400;
@@ -734,13 +734,13 @@ ul .perforator-group {
 
 .popular-maker-item a:hover,
 .popular-maker-item a:focus {
-	-webkit-box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
-	        box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
+	-webkit-box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+	        box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .popular-maker-item a:active {
-	-webkit-box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
-	        box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
+	-webkit-box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
+	        box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
 	opacity: 0.3;
 }
 
@@ -2180,8 +2180,8 @@ h2 {
 
 .catalog-item:hover,
 .catalog-item:focus {
-    -webkit-box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
-            box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
+    -webkit-box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+            box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .button-buy a {
@@ -2589,18 +2589,18 @@ img {
 	background: #f4f8f9;
 }
 
-.service-tittle {
+.service-title {
 	width: 400px;
 	margin-top: 65px;
 	margin-bottom: 67px;
 }
 
-.service-tittle h2 {
+.service-title h2 {
 	margin: 0;
 	margin-bottom: 25px;
 }
 
-.service-tittle p {
+.service-title p {
 	padding: 0;
 	margin: 0;
 }
@@ -3097,4 +3097,8 @@ ul .slider-group {
 
 .border0 {
 	border: 0;
+}
+
+.search-form input {
+	height: 100%;
 }
