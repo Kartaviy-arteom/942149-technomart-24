@@ -583,7 +583,6 @@ ul .perforator-group {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 	padding: 10px;
-	text-align: center;
 	min-width: 250px;
 	border-radius: 3px;
 	font-weight: 400;
@@ -644,7 +643,6 @@ ul .perforator-group {
 	        justify-content: space-between;
 	padding-left: 30px;
 	padding-right: 30px;
-	background: #f9f5f0;
 	margin-bottom: 20px;
 	background: #f9f5f0;
 	-webkit-box-align: center;
@@ -1023,7 +1021,7 @@ ul .perforator-group {
 	max-width: 220px;
 }
 
-.botton {
+.button {
 	display: block;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -1038,12 +1036,12 @@ ul .perforator-group {
 
 }
 
-.botton:hover,
-.botton:focus {
+.button:hover,
+.button:focus {
 	background: #ca2c37;
 }
 
-.botton:active {
+.button:active {
 	background: #ba2732;
 }
 
