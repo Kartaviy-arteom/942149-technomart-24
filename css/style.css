@@ -112,12 +112,12 @@ input[type="search"]::placeholder { color: #ffffff; }
     opacity: 0.3;
 }
 
-.search-form input:focus + .search-form-btn {
+.search-form-field:focus + .search-form-btn {
 	background-image: url("../img/icon-search-red.svg");
 	opacity: 1;
 }
 
-.search-form input:hover + .search-form-btn {
+.search-form-field:hover + .search-form-btn {
 	opacity: 1;
 }
 
