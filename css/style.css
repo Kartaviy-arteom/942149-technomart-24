@@ -2532,6 +2532,7 @@ img {
 	        justify-content: flex-start;
 	height: 100%;
 	background-image: url("../img/drill-group.jpg");
+	background-color: #675b53;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 }
@@ -3085,6 +3086,7 @@ img {
 	        justify-content: flex-start;
 	height: 100%;
 	background-image: url("../img/perforator-group.jpg");
+	background-color: #9c9691;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 }
