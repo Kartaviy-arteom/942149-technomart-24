@@ -305,6 +305,7 @@ input[type="search"]::placeholder { color: #ffffff; }
     border: 3px solid #ffffff;
     text-align: center;
     margin-bottom: 3px;
+    vertical-align: inherit;
 
 }
 
@@ -476,6 +477,7 @@ input[type="search"]::placeholder { color: #ffffff; }
     color: rgb(255,255,255);
     font-weight: bold;
     text-align: left;
+    vertical-align: inherit;
 }
 
 .drill-group strong,
@@ -898,6 +900,7 @@ ul .perforator-group {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	text-align: left;
+	vertical-align: inherit;
 }
 
 .service-guarantee {
@@ -2011,6 +2014,7 @@ h2 {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-weight: bold;
     text-align: center;
+    vertical-align: inherit;
     font-size: 16px;
     line-height: 20px;
 }
@@ -2578,6 +2582,7 @@ img {
 }
 
 .gallery-button {
+	cursor: pointer;
 	background: transparent;
 	border: none;
 	padding: 0;
@@ -3042,6 +3047,7 @@ img {
 	height: 10px;
 	background-color: #ffffff;
 	border-radius: 5px;
+	vertical-align: inherit;
 }
 
 .slider-controls .active::before {
