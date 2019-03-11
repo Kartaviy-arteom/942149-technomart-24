@@ -13,7 +13,8 @@ body {
 a {
 	text-decoration: none;
 }
-header {
+.main-header,
+.inner-header {
 	background-color: #f4f7f9;
 }
 
@@ -578,6 +579,7 @@ ul .perforator-group {
 	color: #32425c;
 	margin-top: 27px;
 	margin-bottom: 30px;
+	text-transform: uppercase;
 }
 
 .all-popular-product {
@@ -665,6 +667,7 @@ ul .perforator-group {
 	line-height: 30px;
 	text-align: left;
 	color: #32425c;
+	text-transform: uppercase;
 }
 
 .all-popular-maker {
@@ -1593,14 +1596,6 @@ ul .perforator-group {
 	color: #000000;
 }
 
-h2 {
-	font-size: 30px;
-	line-height: 30px;
-	font-weight: 400;
-	color: #32425c;
-	text-transform: uppercase;
-}
-
 .filters {
 	width: 220px;
 	font-family: "PT Sans", Arial, sans-serif;
@@ -1835,6 +1830,11 @@ h2 {
 	padding-bottom: 30px;
 	background: #f1f5f7;
 	margin-bottom: 18px;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	color: #32425c;
+	text-transform: uppercase;
 }
 
 .catalog-columns {
@@ -2787,6 +2787,11 @@ img {
 	margin: 0;
 	padding-top: 63px;
 	margin-bottom: 25px;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	color: #32425c;
+	text-transform: uppercase;
 }
 
 .catalog-item img {
