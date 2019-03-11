@@ -294,155 +294,50 @@
         </section>
       </div>
     </footer>
-      <section class="modal modal-map">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A440715fdce038695a403d18afd56cfa7c46f513d68e0a40df8e4c785680ed8e7&amp;source=constructor" width="940" height="446" class="border0"></iframe>
-        <div>
-          <img src="img/big_map.png" width="940" height="446" alt="Вы можете нас найти по адресу: г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8">
-        </div>
-        <button class="button-close" type="button" aria-label="Закрыть окно с картой"></button>
-      </section>
-      <section class="modal modal-write-us">
-        <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+    <section class="modal modal-map">
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A440715fdce038695a403d18afd56cfa7c46f513d68e0a40df8e4c785680ed8e7&amp;source=constructor" width="940" height="446" class="border0"></iframe>
+      <div>
+        <img src="img/big_map.png" width="940" height="446" alt="Вы можете нас найти по адресу: г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8">
+      </div>
+      <button class="button-close" type="button" aria-label="Закрыть окно с картой"></button>
+    </section>
+    <section class="modal modal-write-us">
+      <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <div class="modal-user-contact">
+            <div class="modal-wrapper modal-wrapper-user">
+              <label for="modal-user-name">Ваше имя:</label>
+              <input class="modal-user-name" id="modal-user-name" type="text" name="user-name" placeholder="Имя Фамилия">
+            </div>
+            <div class="modal-wrapper modal-wrapper-email">
+              <label for="user-email">Ваш e-mail:</label>
+              <input class="user-email" id="user-email" type="email" name="user-email" placeholder="email@example.com">
+            </div>
+          </div>
+          <div class="modal-wrapper modal-wrapper-message">
+            <label for="user-question">Текст письма:</label>
+            <textarea class="user-question" id="user-question" rows="6" placeholder="Ваше сообщение"></textarea>
+          </div>
+          <div class="modal-submit-wrapper">  
+            <button class="button-submit" type="submit">Отправить</button>
+          </div>
+          <button class="button-close" type="button" aria-label="Закрыть окно"></button>
+        </fieldset>
+      </form>
+    </section>
+    <section class="modal modal-order">
+      <span>Товар добавлен в корзину!</span>
+      <div class="modal-order-nav"> 
+        <form class="order-now" action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
-            <div class="modal-user-contact">
-              <div class="modal-wrapper modal-wrapper-user">
-                <label for="modal-user-name">Ваше имя:</label>
-                <input class="modal-user-name" id="modal-user-name" type="text" name="user-name" placeholder="Имя Фамилия">
-              </div>
-              <div class="modal-wrapper modal-wrapper-email">
-                <label for="user-email">Ваш e-mail:</label>
-                <input class="user-email" id="user-email" type="email" name="user-email" placeholder="email@example.com">
-              </div>
-            </div>
-            <div class="modal-wrapper modal-wrapper-message">
-              <label for="user-question">Текст письма:</label>
-              <textarea class="user-question" id="user-question" rows="6" placeholder="Ваше сообщение"></textarea>
-            </div>
-            <div class="modal-submit-wrapper">  
-              <button class="button-submit" type="submit">Отправить</button>
-            </div>
+            <button class="button-continue" type="button">Продолжить покупки</button>
             <button class="button-close" type="button" aria-label="Закрыть окно"></button>
           </fieldset>
         </form>
-      </section>
-      <section class="modal modal-order">
-        <span>Товар добавлен в корзину!</span>
-        <div class="modal-order-nav"> 
-          <form class="order-now" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset>
-              <button class="button-continue" type="button">Продолжить покупки</button>
-              <button class="button-close" type="button" aria-label="Закрыть окно"></button>
-            </fieldset>
-          </form>
-          <a href="order.html" class="order-page">Оформить заказ</a>
-        </div>
-      </section>
-      <script>
-        var addProduct = document.querySelectorAll(".buy-now");
-        var popupInCart = document.querySelector(".modal-order");
-        var close = popupInCart.querySelector(".button-close");
-        var buyMore = popupInCart.querySelector(".button-continue");
-        var buy = popupInCart.querySelector(".order-page");
-        for (var i = 0; i < addProduct.length; i++) {
-          addProduct[i].addEventListener("click", function (evt) {
-            evt.preventDefault();
-            popupInCart.classList.add("modal-order-show");
-            buy.focus();
-          });
-        }
-        close.addEventListener("click", function (evt) {
-          evt.preventDefault();
-          popupInCart.classList.remove("modal-order-show");
-        });
-        buyMore.addEventListener("click", function (evt) {
-          evt.preventDefault();
-          popupInCart.classList.remove("modal-order-show");
-        });   
-        window.addEventListener("keydown", function (evt) {
-          if (evt.keyCode === 27) {
-            evt.preventDefault();
-            if (popupInCart.classList.contains("modal-order-show")) {
-              popupInCart.classList.remove("modal-order-show");
-            } 
-          }
-        });  
-        /*карта*/
-        var mapLink = document.querySelector(".location-map");
-        var mapPopup = document.querySelector(".modal-map");
-        var mapClose = mapPopup.querySelector(".button-close");
-        mapLink.addEventListener("click", function (evt) {
-          evt.preventDefault();
-          mapPopup.classList.add("modal-show");
-        });
-        mapClose.addEventListener("click", function (evt) {
-          evt.preventDefault();
-          mapPopup.classList.remove("modal-show");
-        });
-        window.addEventListener("keydown", function (evt) {
-          if (evt.keyCode === 27) {
-            evt.preventDefault();
-            if (mapPopup.classList.contains("modal-show")) {
-              mapPopup.classList.remove("modal-show");
-            } 
-          }
-        });        
-       
-        /*напишите нам*/
-        var linkWriteUs = document.querySelector(".show-write-us");
-        var popupWriteUs = document.querySelector(".modal-write-us");
-        var closeWriteUs = popupWriteUs.querySelector(".button-close");
-        var login = popupWriteUs.querySelector("[name=user-name]");
-        var form = popupWriteUs.querySelector("form");
-        var userEmail = popupWriteUs.querySelector("[name=user-email]");
-        var userQuestion = popupWriteUs.querySelector("[name=user-question]")
-        var isStorageSupport = true;
-        var storage = "";
-        var storageMail = "";
-        try {
-          storage = localStorage.getItem("login");
-        } catch (err) {
-          isStorageSupport = false;
-        }
-        linkWriteUs.addEventListener("click", function (evt) {
-          evt.preventDefault();
-          popupWriteUs.classList.add("modal-show");
-          if (storage && storageMail) {
-            login.value = storage; userEmail.value = storageMail;
-          } else {         
-            login.focus();
-          }
-        });
-        closeWriteUs.addEventListener("click", function (evt) {
-          evt.preventDefault();
-          popupWriteUs.classList.remove("modal-show");
-          popupWriteUs.classList.remove("modal-error");
-        });
-        window.addEventListener("keydown", function (evt) {
-          if (evt.keyCode === 27) {
-            evt.preventDefault();
-            if (popupWriteUs.classList.contains("modal-show")) {
-              popupWriteUs.classList.remove("modal-show");
-              popupWriteUs.classList.remove("modal-error");
-            } 
-          }
-        });
-        form.addEventListener("submit", function (evt) {
-          if (!login.value || !userEmail.value || !userQuestion.value) {
-            evt.preventDefault();
-            popupWriteUs.classList.remove("modal-error");
-            popupWriteUs.offsetWidth = popupWriteUs.offsetWidth;
-            popupWriteUs.classList.add("modal-error");
-            popupWriteUs.offsetWidth = popup.offsetWidth;
-            console.log("Нужно ввести логин и пароль");
-          } else {
-            if (isStorageSupport) {
-              localStorage.setItem("login", login.value);
-            }
-            if (isStorageSupport) {
-              localStorage.setItem("userEmail", userEmail.value);
-            }            
-          }
-        }); 
-      </script>
+        <a href="order.html" class="order-page">Оформить заказ</a>
+      </div>
+    </section>
+    <script src="js/modal.js">
+    </script>
   </body>
 </html>

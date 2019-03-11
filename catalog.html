@@ -334,37 +334,7 @@
         <a href="order.html" class="order-page">Оформить заказ</a>
       </div>
     </section>
-    <script>
-      var addProduct = document.querySelectorAll(".buy-now");
-
-      var popupInCart = document.querySelector(".modal-order");
-      var close = popupInCart.querySelector(".button-close");
-      var buyMore = popupInCart.querySelector(".button-continue");
-      var buy = popupInCart.querySelector(".order-page");
-
-      for (var i = 0; i < addProduct.length; i++) {
-        addProduct[i].addEventListener("click", function (evt) {
-          evt.preventDefault();
-          popupInCart.classList.add("modal-order-show");
-          buy.focus();
-        });
-      }
-      close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popupInCart.classList.remove("modal-order-show");
-      });
-      buyMore.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popupInCart.classList.remove("modal-order-show");
-      });   
-      window.addEventListener("keydown", function (evt) {
-        if (evt.keyCode === 27) {
-          evt.preventDefault();
-          if (popupInCart.classList.contains("modal-order-show")) {
-            popupInCart.classList.remove("modal-order-show");
-          } 
-        }
-      });   
+    <script src="js/modal.js">
     </script>
   </body>
 </html>
